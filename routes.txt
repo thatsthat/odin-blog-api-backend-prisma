@@ -1,0 +1,85 @@
+/// Article ROUTES ///
+
+GET /articles/        # Get all the public articles
+GET /articles/:id     # Get user's articles
+
+POST /articles/       # Create a new article
+PATCH /articles/:id   # Toggle article published status
+
+
+
+
+/// BOOK ROUTES ///
+
+// POST request for creating Book.
+/book/create
+
+// GET request to delete Book.
+/book/:id/delete
+
+// POST request to delete Book.
+/book/:id/delete
+
+// GET request to update Book.
+/book/:id/update
+
+// POST request to update Book.
+/book/:id/update
+
+// GET request for one Book.
+/book/:id
+
+// GET request for list of all Book items.
+/books
+
+/// AUTHOR ROUTES ///
+
+// GET request for creating Author. NOTE This must come before route for id (i.e. display author).
+/author/create
+
+// POST request for creating Author.
+/author/create
+
+// GET request to delete Author.
+/author/:id/delete
+
+// POST request to delete Author.
+/author/:id/delete
+
+// GET request to update Author.
+/author/:id/update
+
+// POST request to update Author.
+/author/:id/update
+
+// GET request for one Author.
+/author/:id
+
+// GET request for list of all Authors.
+/authors
+
+/// BOOKINSTANCE ROUTES ///
+
+// GET request for creating a BookInstance. NOTE This must come before route that displays BookInstance (uses id).
+/bookinstance/create
+
+// POST request for creating BookInstance.
+/bookinstance/create
+
+// GET request to delete BookInstance.
+/bookinstance/:id/delete
+
+// POST request to delete BookInstance.
+/bookinstance/:id/delete
+
+// GET request to update BookInstance.
+/bookinstance/:id/update
+
+// POST request to update BookInstance.
+/bookinstance/:id/update
+
+// GET request for one BookInstance.
+/bookinstance/:id
+
+// GET request for list of all BookInstance.
+/bookinstances
