@@ -8,6 +8,7 @@
     "serverstart": "DEBUG=odin-blog-api-backend:* npm run devstart"
   },
   "dependencies": {
+    "@prisma/client": "^6.0.1",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
@@ -23,6 +24,7 @@
     "nodemon": "^3.1.2"
   },
   "devDependencies": {
-    "@flydotio/dockerfile": "^0.5.8"
+    "@flydotio/dockerfile": "^0.5.8",
+    "prisma": "^6.0.1"
   }
 }

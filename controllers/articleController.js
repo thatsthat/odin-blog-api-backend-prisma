@@ -1,6 +1,8 @@
 const Article = require("../models/article");
 const asyncHandler = require("express-async-handler");
 const { body, validationResult } = require("express-validator");
+const { PrismaClient } = require("@prisma/client");
+const prisma = new PrismaClient();
 
 // Handle Post create on POST.
 exports.create = [
@@ -15,11 +17,14 @@ exports.create = [
     const errors = validationResult(req);
 
     // Create a Item object with escaped and trimmed data.
-    const article = new Article({
-      title: req.body.title,
-      text: req.body.text,
-      author: req.body.author, // es mas seguro utilizar JWT en el backend para esta variable
-      isPublished: true,
+
+    await prisma.article.create({
+      data: {
+        title: req.body.title,
+        text: req.body.text,
+        authorId: req.body.author.id,
+        isPublished: true,
+      },
     });
 
     if (!errors.isEmpty()) {
@@ -27,27 +32,25 @@ exports.create = [
       return res.status(400).json({ error: errors.array()[0].msg });
     } else {
       // Data from form is valid. Save item.
-      await article.save();
-      return res.send(article);
+      await prisma.$disconnect();
+      return res.send("Article saved");
     }
   }),
 ];
 
 exports.list = asyncHandler(async (req, res, next) => {
-  const allArticles = await Article.find(
-    { isPublished: true },
-    "title text author date comments"
-  )
-    .sort({ title: 1 })
-    .populate("author")
-    .populate({ path: "comments", populate: { path: "author" } })
-    .exec();
-
+  const allArticles = await prisma.article.findMany({
+    include: {
+      comments: true,
+    },
+  });
   const allPosts = allArticles;
 
   /* const allPosts = allArticles.map((article) => {
     article;
   }); */
+
+  console.log(allPosts);
 
   return res.send(allPosts);
 });

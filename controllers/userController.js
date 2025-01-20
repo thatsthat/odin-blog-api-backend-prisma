@@ -3,6 +3,8 @@ const asyncHandler = require("express-async-handler");
 const jwt = require("jsonwebtoken");
 const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
+const { PrismaClient } = require("@prisma/client");
+const prisma = new PrismaClient();
 
 // Handle Post create on POST.
 exports.signup = [
@@ -46,15 +48,16 @@ exports.signup = [
       // Signup data is valid. Proceed with signup
       try {
         bcrypt.hash(req.body.password, 10, async (err, hashedPassword) => {
-          const user = new User({
-            firstName: req.body.firstName,
-            lastName: req.body.lastName,
-            email: req.body.email,
-            password: hashedPassword,
-            isAdmin: true,
-            isWriter: true,
+          await prisma.user.create({
+            data: {
+              firstName: req.body.firstName,
+              lastName: req.body.lastName,
+              email: req.body.email,
+              password: hashedPassword,
+              isAdmin: true,
+              isWriter: true,
+            },
           });
-          const result = await user.save();
         });
       } catch (err) {
         return next(err);
@@ -88,7 +91,12 @@ exports.login = [
   }),
   asyncHandler(async (req, res, next) => {
     try {
-      const user = await User.findOne({ email: req.body.email });
+      const user = await prisma.user.findUnique({
+        where: {
+          email: req.body.email,
+        },
+      });
+
       if (!user) {
         return res.status(403).json({ error: "Incorrect username" });
       }
