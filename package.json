@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "dotenvx run -f .env.production node ./bin/www",
+    "start": "dotenvx run -f .env.production -- node ./bin/www",
     "devstart": "dotenvx run -f .env.local -- nodemon ./bin/www",
     "serverstart": "DEBUG=odin-blog-api-backend:* npm run devstart"
   },
