@@ -9,14 +9,6 @@ const prisma = new PrismaClient();
 // Handle Post create on POST.
 exports.signup = [
   // Validate and sanitize fields.
-  body("firstName", "Please provide a first name.")
-    .trim()
-    .isLength({ min: 1 })
-    .escape(),
-  body("lastName", "Please provide a last name.")
-    .trim()
-    .isLength({ min: 1 })
-    .escape(),
   body("email", "Please provide a valid email address.")
     .trim()
     .isLength({ min: 1 })
@@ -24,9 +16,13 @@ exports.signup = [
     .escape(),
   body("email").custom(async (value) => {
     if (value) {
-      const user = await User.find({ email: value }).exec();
+      const user = await prisma.user.findUnique({
+        where: {
+          email: value,
+        },
+      });
 
-      if (user.length > 0) {
+      if (user) {
         throw new Error("Email address already in use");
       }
     }
@@ -50,15 +46,12 @@ exports.signup = [
         bcrypt.hash(req.body.password, 10, async (err, hashedPassword) => {
           await prisma.user.create({
             data: {
-              firstName: req.body.firstName,
-              lastName: req.body.lastName,
               email: req.body.email,
               password: hashedPassword,
-              isAdmin: true,
-              isWriter: true,
             },
           });
         });
+        res.json("Sign Up Completed!");
       } catch (err) {
         return next(err);
       }

@@ -13,36 +13,21 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Article {
-  id            Int      @id @default(autoincrement())
-  date          DateTime @default(now())
-  title         String   @db.VarChar(255)
-  text          String
-  markDownText  String
-  isPublished   Boolean  @default(false)
-  author        User     @relation(fields: [authorId], references: [id])
-  authorId      Int
-  comments      Comment[]
-}
-
 model User {
-  id        Int      @id @default(autoincrement())
-  email     String   @unique
-  password  String
-  firstName String
-  lastName  String
-  isAdmin   Boolean  @default(false)
-  isWriter  Boolean  @default(false)
-  articles  Article[]
-  comments  Comment[]
+  id          Int      @id @default(autoincrement())
+  email       String   @unique
+  password    String
+  ownedFiles  File[]   @relation("ownedFiles")
 }
 
-model Comment {
-  id            Int       @id @default(autoincrement())
-  text          String
-  author        User      @relation(fields: [authorId], references: [id])
-  authorId      Int
-  article       Article   @relation(fields: [articleId], references: [id])
-  articleId     Int
-  date          DateTime @default(now())
+model File {
+  id            Int      @id @default(autoincrement())
+  created       DateTime @default(now())
+  name          String   @db.VarChar(255)
+  owner         User     @relation("ownedFiles", fields: [ownerId], references: [id])
+  ownerId       Int
+  isFolder      Boolean  @default(false)
+  parent        File?    @relation("file", fields: [parentId], references: [id])
+  parentId      Int?
+  children      File[]   @relation("file")
 }
