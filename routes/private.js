@@ -1,15 +1,13 @@
 var express = require("express");
 var router = express.Router();
+const multer = require("multer");
+const upload = multer({ dest: "uploads/" });
 
 // Require controller modules.
-const article = require("../controllers/articleController");
+const file = require("../controllers/fileController");
 
-router.get("/", article.list_user);
-router.post("/", article.create);
-router.patch("/:articleId", article.toggle_published);
-router.delete("/:articleId", article.delete);
-
-router.patch("/comments/:articleId", article.comment_create);
-router.delete("/comments/:commentId", article.comment_delete);
+router.get("/:ownerId", file.list);
+router.post("/", upload.single("avatar"), file.create);
+router.delete("/:fileId", file.delete);
 
 module.exports = router;

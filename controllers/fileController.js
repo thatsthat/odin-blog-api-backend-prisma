@@ -5,65 +5,35 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 // Handle Post create on POST.
-exports.create = [
-  // Validate and sanitize fields.
-  body("title", "Post title must not be empty.").trim().isLength({ min: 1 }),
-  body("text", "Post text must not be empty.").isLength({ min: 1 }),
-
-  // Process request after validation and sanitization.
-  asyncHandler(async (req, res, next) => {
-    // Extract the validation errors from a request.
-    console.log(req.body.author);
-    const errors = validationResult(req);
-
-    // Create a Item object with escaped and trimmed data.
-
-    await prisma.article.create({
-      data: {
-        title: req.body.title,
-        text: req.body.text,
-        authorId: req.body.author.id,
-        isPublished: true,
-      },
-    });
-
-    if (!errors.isEmpty()) {
-      // There are errors.
-      return res.status(400).json({ error: errors.array()[0].msg });
-    } else {
-      // Data from form is valid. Save item.
-      await prisma.$disconnect();
-      return res.send("Article saved");
-    }
-  }),
-];
-
-exports.list = asyncHandler(async (req, res, next) => {
-  const allArticles = await prisma.article.findMany({
-    include: {
-      comments: true,
+exports.create = asyncHandler(async (req, res, next) => {
+  await prisma.file.create({
+    data: {
+      name: req.file.originalname,
+      owner: { connect: { id: req.user.id } },
+      parent: undefined,
     },
   });
-  const allPosts = allArticles;
-
-  /* const allPosts = allArticles.map((article) => {
-    article;
-  }); */
-
-  console.log(allPosts);
-
-  return res.send(allPosts);
+  return res.send("File saved");
 });
 
-exports.list_user = asyncHandler(async (req, res, next) => {
-  console.log(req.user);
-  const userArticles = await Article.find(
-    { author: req.user._id },
-    "title isPublished date author"
-  )
-    .sort({ title: 1 })
-    .exec();
-  return res.send(userArticles);
+exports.delete = asyncHandler(async (req, res, next) => {
+  console.log(req.params.fileId);
+  await prisma.file.delete({
+    where: {
+      id: +req.params.fileId,
+    },
+  });
+  return res.send("File deleted");
+});
+
+exports.list = asyncHandler(async (req, res, next) => {
+  const files = await prisma.file.findMany({
+    where: {
+      ownerId: +req.params.ownerId,
+    },
+  });
+
+  return res.send(files);
 });
 
 exports.toggle_published = asyncHandler(async (req, res, next) => {
@@ -76,12 +46,6 @@ exports.toggle_published = asyncHandler(async (req, res, next) => {
     {}
   );
   return res.send(savedArticle);
-});
-
-exports.delete = asyncHandler(async (req, res, next) => {
-  // ToDO Check that articleId belongs to logged in user.
-  await Article.findByIdAndDelete(req.params.articleId);
-  return res.send(JSON.stringify("article deleted"));
 });
 
 // Handle comment create
