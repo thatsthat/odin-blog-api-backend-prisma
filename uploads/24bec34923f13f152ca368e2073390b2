@@ -1,0 +1,168 @@
+INFO         | Android emulator version 35.4.9.0 (build_id 13025442) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Found systemPath /opt/android-sdk/system-images/android-35/google_apis_playstore/x86_64/
+INFO         | Increasing RAM size to 2048MB
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `aram` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `aram` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `aram` are met
+WARNING      | File System is not ext4, disable QuickbootFileBacked feature
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_day_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_btn_xr_environment_living_room_night_clicked() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_posture_requested(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_posture_selection_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_resizable_requested(PresetEmulatorSizeType) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_resizable_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_environment_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_environment_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_xr_input_mode_changed(int) (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_xr_input_mode_dialog() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_sleep_timer_done() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_unfold_timer_done() (:0, )
+INFO         | Storing crashdata in: /tmp/android-aram/emu-crash-35.4.9.db, detection is enabled for process: 24526
+INFO         | Guest Driver: Auto (ext controls)
+library_mode host gpu mode host
+INFO         | emuglConfig_get_vulkan_hardware_gpu_support_info: Found physical GPU 'Intel(R) Iris(R) Graphics 6100 (BDW GT3)', type: VK_PHYSICAL_DEVICE_TYPE_INTEGRATED_GPU, apiVersion: 1.3.305, driverVersion: 25.0.3
+
+INFO         | Enabled VulkanAllocateHostMemory feature for gpu vendor Intel(R) Iris(R) Graphics 6100 (BDW GT3) on Linux
+
+INFO         | GPU device local memory = 3919MB
+INFO         | Initializing hardware OpenGLES emulation support
+I0408 09:44:18.205459   24526 opengles.cpp:285] android_startOpenglesRenderer: gpu info
+I0408 09:44:18.205505   24526 opengles.cpp:286] 
+INFO         | Raised nofile soft limit to 4096.
+INFO         | HealthMonitor disabled.
+INFO         | SharedLibrary::open for [libvulkan.so]
+
+INFO         | SharedLibrary::open for [libvulkan.so]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libvulkan.so] (posix): begin
+
+INFO         | SharedLibrary::open for [libvulkan.so] (posix,linux): call dlopen on [libvulkan.so]
+
+INFO         | Added library: libvulkan.so
+INFO         | Selecting Vulkan device: Intel(R) Iris(R) Graphics 6100 (BDW GT3), Version: 1.3.305
+INFO         | Supports id properties, got a vulkan device UUID
+INFO         | SharedLibrary::open for [libX11]
+
+INFO         | SharedLibrary::open for [libX11]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libX11] (posix): begin
+
+INFO         | SharedLibrary::open for [libX11] (posix,linux): call dlopen on [libX11.so]
+
+INFO         | SharedLibrary::open for [libGL.so.1]
+
+INFO         | SharedLibrary::open for [libGL.so.1]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libGL.so.1] (posix): begin
+
+INFO         | SharedLibrary::open for [libGL.so.1] (posix,linux): call dlopen on [libGL.so.1]
+
+INFO         | SharedLibrary::open for [libshadertranslator.so]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libshadertranslator.so] (posix): begin
+
+INFO         | SharedLibrary::open for [libshadertranslator.so] (posix,linux): call dlopen on [libshadertranslator.so]
+
+INFO         | Initializing VkEmulation features:
+INFO         |     glInteropSupported: true
+INFO         |     useDeferredCommands: true
+INFO         |     createResourceWithRequirements: true
+INFO         |     useVulkanComposition: false
+INFO         |     useVulkanNativeSwapchain: false
+INFO         |     enable guestRenderDoc: false
+INFO         |     ASTC LDR emulation mode: 2
+INFO         |     enable ETC2 emulation: true
+INFO         |     enable Ycbcr emulation: false
+INFO         |     guestVulkanOnly: false
+INFO         |     useDedicatedAllocations: true
+INFO         | Graphics Adapter Vendor Google (Intel)
+INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Mesa Intel(R) Iris(R) Graphics 6100 (BDW GT3))
+INFO         | Graphics API Version OpenGL ES 3.0 (4.6 (Core Profile) Mesa 25.0.3-arch1.1)
+INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+INFO         | Graphics Device Extensions N/A
+INFO         | Sending adb public key [QAAAAO8tW/XxXnTm6TQOpL5lAgcyy2Ca69tkapjwodhlLmZvJCFok/NCiawkTGUUMXCpkaMvJtkhE8YzEjWtmy2o1FTFWMcBKm0JwzNe3SmNajgXpNoLirDGSf4Muxq9uk6Mm8pKnpzend/pW9YkGCWNsDNcn7GKy8sfQeiQ5mNb1icJZoVnkoRUKycyxaqGSKCu4i9jGpWz1jw032BdCXa68++OxuS0F9XPUZp6rzlK6P2rwSyI0gTjZv6uKChdC02PNt39cKuqkW5jsoStS2a6KPNr81ZxV5T5jn4UgkIPdI+RzN2xylqtvRolrD7Wm7EaZKo6udoICq//epPeVld6TMrveHikuqBc3YbyxtyKspjFoF3GCxRQx2tAqmXOyVKQQxA6cFuSp1D17n/V5t+CBPAwPM/sqEy+PJGiQX3HYzUpoQ4IRSJcxWh4uvSFKLVXf6tVT/bRlBN9Ae2uD7W1/fid2v20ULxyd6dK3gc9hk69mhvsm5lsyP+FeTYQZhFAVbHovv72mBZTtPAG8FIJKPL3MoYyphbgtvTZhu37Y/CMqh4BKoS/K/CdAOJ7iOIG9pFpMUlAVOOa35dgo5MhjRG/9ixF2jq+VibzDNmBelMJiPS0la0kb5qNOmNOFJp95KO8cbR2BbUOe49sUVYn903OJ7X3p2Jj4AmedDP3ZgX2hDDTMQEAAQA= aram@unknown]
+INFO         | Userspace boot properties:
+INFO         |   androidboot.boot_devices=pci0000:00/0000:00:03.0 pci0000:00/0000:00:06.0
+INFO         |   androidboot.dalvik.vm.heapsize=512m
+INFO         |   androidboot.debug.hwui.renderer=skiagl
+INFO         |   androidboot.hardware=ranchu
+INFO         |   androidboot.hardware.gltransport=pipe
+INFO         |   androidboot.hardware.vulkan=ranchu
+INFO         |   androidboot.logcat=*:V
+INFO         |   androidboot.opengles.version=196609
+INFO         |   androidboot.qemu=1
+INFO         |   androidboot.qemu.adb.pubkey=QAAAAO8tW/XxXnTm6TQOpL5lAgcyy2Ca69tkapjwodhlLmZvJCFok/NCiawkTGUUMXCpkaMvJtkhE8YzEjWtmy2o1FTFWMcBKm0JwzNe3SmNajgXpNoLirDGSf4Muxq9uk6Mm8pKnpzend/pW9YkGCWNsDNcn7GKy8sfQeiQ5mNb1icJZoVnkoRUKycyxaqGSKCu4i9jGpWz1jw032BdCXa68++OxuS0F9XPUZp6rzlK6P2rwSyI0gTjZv6uKChdC02PNt39cKuqkW5jsoStS2a6KPNr81ZxV5T5jn4UgkIPdI+RzN2xylqtvRolrD7Wm7EaZKo6udoICq//epPeVld6TMrveHikuqBc3YbyxtyKspjFoF3GCxRQx2tAqmXOyVKQQxA6cFuSp1D17n/V5t+CBPAwPM/sqEy+PJGiQX3HYzUpoQ4IRSJcxWh4uvSFKLVXf6tVT/bRlBN9Ae2uD7W1/fid2v20ULxyd6dK3gc9hk69mhvsm5lsyP+FeTYQZhFAVbHovv72mBZTtPAG8FIJKPL3MoYyphbgtvTZhu37Y/CMqh4BKoS/K/CdAOJ7iOIG9pFpMUlAVOOa35dgo5MhjRG/9ixF2jq+VibzDNmBelMJiPS0la0kb5qNOmNOFJp95KO8cbR2BbUOe49sUVYn903OJ7X3p2Jj4AmedDP3ZgX2hDDTMQEAAQA= aram@unknown
+INFO         |   androidboot.qemu.avd_name=aram
+INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+INFO         |   androidboot.qemu.camera_protocol_ver=1
+INFO         |   androidboot.qemu.cpuvulkan.version=4202496
+INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+INFO         |   androidboot.qemu.gltransport.name=pipe
+INFO         |   androidboot.qemu.hwcodec.avcdec=2
+INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+INFO         |   androidboot.qemu.virtiowifi=1
+INFO         |   androidboot.qemu.vsync=60
+INFO         |   androidboot.serialno=EMULATOR35X4X9X0
+INFO         |   androidboot.vbmeta.digest=9b597927025d4f62f4594a14632a8d3763239f29c0b7af229e0b6ebcddcdea60
+INFO         |   androidboot.vbmeta.hash_alg=sha256
+INFO         |   androidboot.vbmeta.size=6720
+INFO         |   androidboot.veritymode=enforcing
+WARNING: cannnot unmap ptr 0x7a357c801000 as it is in the protected range from 0x7a34fc800000 to 0x7a357ca00000
+[/etc/pulse/client.conf:37] Missing '='.
+INFO         | Monitoring duration of emulator setup.
+WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+INFO         | Using security allow list from: /opt/android-sdk/emulator/lib/emulator_access.json
+WARNING      | *** Basic token auth should only be used by android-studio ***
+INFO         | The active JSON Web Key Sets can be found here: /run/user/1000/avd/running/24526/jwks/121d4598-cc1c-4b5b-b326-d2fb47ef207f/active.jwk
+INFO         | Scanning /run/user/1000/avd/running/24526/jwks/121d4598-cc1c-4b5b-b326-d2fb47ef207f for jwk keys.
+INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+INFO         | Advertising in: /run/user/1000/avd/running/pid_24526.ini
+INFO         | Setting display: 0 configuration to: 1080x2424, dpi: 420x420 
+INFO         | setDisplayActiveConfig 0
+ERROR        | Unable to connect to adb daemon on port: 5037
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `aram` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `aram` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `aram` are met
+ERROR        | Unable to connect to adb daemon on port: 5037
+##############################################################################
+##                        WARNING - ACTION REQUIRED                         ##
+##  Consider using the '-metrics-collection' flag to help improve the       ##
+##  emulator by sending anonymized usage data. Or use the '-no-metrics'     ##
+##  flag to bypass this warning and turn off the metrics collection.        ##
+##  In a future release this warning will turn into a one-time blocking     ##
+##  prompt to ask for explicit user input regarding metrics collection.     ##
+##                                                                          ##
+##  Please see '-help-metrics-collection' for more details. You can use     ##
+##  '-metrics-to-file' or '-metrics-to-console' flags to see what type of   ##
+##  data is being collected by emulator as part of usage statistics.        ##
+##############################################################################
+USER_INFO    | Emulator is performing a full startup. This may take upto two minutes, or more.
+INFO         | Activated packet streamer for bluetooth emulation
+INFO         | Boot completed in 51806 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_rgbcSensorValueWidget_valueChanged() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_posture_valueChanged(int) (:0, )
+INFO         | AVD supportsNativeGLES=1, supportsGuestAngle=1
+INFO         | Info: Sandboxing disabled by user. (:0, )
+INFO         | Created VkInstance:0x5d6ee2654000 for application: engine:.
+ERROR        | Failed to create Vk ColorBuffer: format:32855 not compatible.
+ERROR        | Failed to create Vk ColorBuffer: format:32855 not compatible.
+ERROR        | Failed to create Vk ColorBuffer: format:32855 not compatible.
+ERROR        | Failed to create Vk ColorBuffer: format:32855 not compatible.
+ERROR        | Failed to create Vk ColorBuffer: format:32855 not compatible.
+ERROR        | Failed to create Vk ColorBuffer: format:32855 not compatible.
+ERROR        | Failed to create Vk ColorBuffer: format:32855 not compatible.
+ERROR        | Failed to create Vk ColorBuffer: format:32855 not compatible.
+INFO         | Deleting snapshot default_boot
+ERROR        | stop: Not implemented

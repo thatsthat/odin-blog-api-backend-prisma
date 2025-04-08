@@ -1,0 +1,10 @@
+[73741:73741:0319/112409.613426:ERROR:content_settings_pref.cc(381)] Invalid pattern strings: http://(function()%20{%20%20%20%20%20var%20id%20=%20'w'%20+%20new%20date().gettime();%20%20%20%20%20var%20options%20=%20'toolbar=yes,location=yes,status=yes,resizable=yes,favorites=yes,window.screen.availwidth:80,*
+[73741:73776:0319/112413.719167:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Created TensorFlow Lite XNNPACK delegate for CPU.
+Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+[73741:73741:0319/112422.845391:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+[73741:73741:0319/112422.845944:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+[73741:73776:0319/112437.202366:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[73741:73776:0319/112521.969566:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[73741:73776:0319/112651.414140:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[/etc/pulse/client.conf:37] Missing '='.

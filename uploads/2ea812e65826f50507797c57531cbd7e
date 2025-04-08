@@ -1,0 +1,51 @@
+<div
+  style=\"visibility:hidden;position:absolute;left:6px;top:180px;z-index:100;width:795px;height:336px;font-style:normal;font-weight:normal;font-size:12px;font-family:\'Verdana\';text-decoration:
+  none;font-family:Verdana, Helvetica, Sans-Serif;\" class=\"GRDSTORAGECSS\" id=\"GRDSTORAGE\" name=\"GRDSTORAGE\"\>\
+  <TABLE id=\"GRDSTORAGEdiv0\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"\>\<TR\>\<TD colspan=\"2\"\>\<TABLE
+          id=\"GRDSTORAGE_\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-collapse:collapse;\"
+          width=\"796px\"\>\<TR height=\"28\"\>\<TD id=\"GRDSTORAGECTRLT\" colspan=\"9\"\>\<p align=\"right\"\>\<font
+                  face=\"Verdana\" style=\"font-size:12px;\"\>&nbsp;\</font\>\</p\>\</TD\>\</TR\>\</TABLE\>\</TD\>\
+    </TR\>\<TR height=\"286px\"\>\<TD onclick=\"gridClick(GRDSTORAGEObj);\" onkeydown=\"return tablekey(GRDSTORAGEObj,
+        event,GRDSTORAGEIWCL);\" id=\"G0mg\" valign=\"top\" width=\"795\"\>\<TABLE id=\"GRDSTORAGE_\" border=\"1\"
+          cellpadding=\"0\" cellspacing=\"0\" style=\"font-size:9pt;color:;\" RULES=\"rows\" FRAME=\"void\"
+          width=\"795px\"\>\<TR\>\<TD id=\"G0CH1\" valign=\"top\" bgcolor=#FFDEAD
+              style=\"background-color:#FFDEAD;width:45px;\"\>\<div style=\"width:45px;overflow:hidden;\"\>\<TABLE
+                  border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"\"\>\<TR\>\<TD\>\<font
+                        face=\"Verdana\" style=\"font-size:12px;\"\> \<font face=\"webdings\" id=\"GRDSTORAGESIND0\"
+                          style=\"display:none;\"\>5\</font\>\</font\>\</TD\>\</TR\>\</TABLE\>\</div\>\</TD\>\<TD
+                    id=\"G0CH2\" valign=\"top\" bgcolor=#FFDEAD
+                    style=\"background-color:#FFDEAD;vertical-align:middle;width:100px;\"\>\<div
+                      style=\"width:100px;overflow:hidden;\"\>\<TABLE border=\"0\" cellpadding=\"0\" cellspacing=\"0\"
+                        width=\"100%\" style=\"text-align:center;\"\>\<TR\>\<TD\>\<font face=\"Verdana\"
+                              style=\"font-size:12px;\"\>Pla�a\<font face=\"webdings\" id=\"GRDSTORAGESIND1\"
+                                style=\"display:none;\"\>5\</font\>\</font\>\</TD\>\</TR\>\</TABLE\>\</div\>\</TD\>\<TD
+                          id=\"G0CH3\" valign=\"top\" bgcolor=#FFDEAD
+                          style=\"background-color:#FFDEAD;vertical-align:middle;width:100px;\"\>\<div
+                            style=\"width:100px;overflow:hidden;\"\>\<TABLE border=\"0\" cellpadding=\"0\"
+                              cellspacing=\"0\" width=\"100%\" style=\"text-align:center;\"\>\<TR\>\<TD\>\<font
+                                    face=\"Verdana\" style=\"font-size:12px;\"\>Ample\<br\>cm\<font face=\"webdings\"
+                                        id=\"GRDSTORAGESIND2\" style=\"display:none;\"\>5\</font\>\</font\>\</TD\>\
+                              </TR\>\</TABLE\>\</div\>\</TD\>\<TD id=\"G0CH4\" valign=\"top\" bgcolor=#FFDEAD
+                                style=\"background-color:#FFDEAD;vertical-align:middle;width:100px;\"\>\<div
+                                  style=\"width:100px;overflow:hidden;\"\>\<TABLE border=\"0\" cellpadding=\"0\"
+                                    cellspacing=\"0\" width=\"100%\" style=\"text-align:center;\"\>\<TR\>\<TD\>\<font
+                                          face=\"Verdana\" style=\"font-size:12px;\"\>Llarg\<br\>cm\<font
+                                              face=\"webdings\" id=\"GRDSTORAGESIND3\" style=\"display:none;\"\>5\
+                                              </font\>\</font\>\</TD\>\</TR\>\</TABLE\>\</div\>\</TD\>\<TD id=\"G0CH5\"
+                                      valign=\"top\" bgcolor=#FFDEAD
+                                      style=\"background-color:#FFDEAD;vertical-align:middle;width:90px;\"\>\<div
+                                        style=\"width:90px;overflow:hidden;\"\>\<TABLE border=\"0\" cellpadding=\"0\"
+                                          cellspacing=\"0\" width=\"100%\" style=\"text-align:center;\"\>\<TR\>\<TD\>\
+                                              <font face=\"Verdana\" style=\"font-size:12px;\"\>Superf�cie\<br\>Traster
+                                                  (m\<SUP\>2\</SUP\>)\<font face=\"webdings\" id=\"GRDSTORAGESIND4\"
+                                                    style=\"display:none;\"\>5\</font\>\</font\>\</TD\>\</TR\>\</TABLE\>
+                                          \</div\>\</TD\>\<TD id=\"G0CH6\" valign=\"top\" bgcolor=#FFDEAD
+                                            style=\"background-color:#FFDEAD;vertical-align:middle;width:90px;\"\>\<div
+                                              style=\"width:90px;overflow:hidden;\"\>\<TABLE border=\"0\"
+                                                cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"
+                                                style=\"text-align:center;\"\>\<TR\>\<TD\>\<font face=\"Verdana\"
+                                                      style=\"font-size:12px;\"\>Preu\<br\>Pla�a (�)\<font
+                                                          face=\"webdings\" id=\"GRDSTORAGESIND5\"
+                                                          style=\"display:none;\"\>5\</font\>\</font\>\</TD\>\</TR\>\
+                                                </TABLE\>\</div\>\</TD\>\<TD id=\"G0CH7\" valign=\"top\" bgcolor=#FFDEAD
+                                                  style=\"background-color:#FFDEAD;vertical-align:middle;width:90px;\"\>

@@ -6,101 +6,57 @@ const prisma = new PrismaClient();
 
 // Handle Post create on POST.
 exports.create = asyncHandler(async (req, res, next) => {
+  var parentData = {};
+  if (req.body.parentId) parentData = { connect: { id: +req.body.parentId } };
   await prisma.file.create({
     data: {
       name: req.file.originalname,
       owner: { connect: { id: req.user.id } },
-      parent: undefined,
+      parent: parentData,
     },
   });
-  return res.send("File saved");
+  return res.json({ message: "File saved" });
+});
+
+exports.createFolder = asyncHandler(async (req, res, next) => {
+  var parentData = {};
+  if (req.body.parentId) parentData = { connect: { id: +req.body.parentId } };
+  await prisma.file.create({
+    data: {
+      name: req.body.name,
+      owner: { connect: { id: req.user.id } },
+      isFolder: true,
+      parent: parentData,
+    },
+  });
+  return res.json({ message: "Folder saved" });
 });
 
 exports.delete = asyncHandler(async (req, res, next) => {
-  console.log(req.params.fileId);
-  await prisma.file.delete({
+  const file = await prisma.file.delete({
     where: {
       id: +req.params.fileId,
     },
   });
-  return res.send("File deleted");
+  return res.send(file);
 });
 
 exports.list = asyncHandler(async (req, res, next) => {
   const files = await prisma.file.findMany({
     where: {
-      ownerId: +req.params.ownerId,
+      ownerId: +req.user.id,
+      parentId: +req.params.parentId,
     },
   });
-
   return res.send(files);
 });
 
-exports.toggle_published = asyncHandler(async (req, res, next) => {
-  // ToDO Check that articleId belongs to logged in user.
-  let article = await Article.findById(req.params.articleId);
-  article.isPublished = !article.isPublished;
-  const savedArticle = await Article.findByIdAndUpdate(
-    req.params.articleId,
-    article,
-    {}
-  );
-  return res.send(savedArticle);
+exports.info = asyncHandler(async (req, res, next) => {
+  const file = await prisma.file.findUnique({
+    where: {
+      ownerId: +req.user.id,
+      id: +req.params.fileId,
+    },
+  });
+  return res.send(file);
 });
-
-// Handle comment create
-exports.comment_create = [
-  // Validate and sanitize fields.
-  body("text", "Comment text must not be empty.")
-    .trim()
-    .isLength({ min: 1 })
-    .escape(),
-
-  // Process request after validation and sanitization.
-  asyncHandler(async (req, res, next) => {
-    // Extract the validation errors from a request.
-    const errors = validationResult(req);
-
-    // ToDO Check that articleId belongs to logged in user.
-    let article = await Article.findById(req.params.articleId);
-    article.comments.push({
-      text: req.body.text,
-      article: req.params.articleId,
-      author: req.user._id,
-    });
-    const savedArticle = await Article.findByIdAndUpdate(
-      req.params.articleId,
-      article,
-      {}
-    );
-
-    if (!errors.isEmpty()) {
-      // There are errors.
-      // Podrias invocar next(errors) i en el middleware siguiente gestionar los errores (mirar ejemplo whatsapp)
-      return res.status(400).json({ error: errors.array()[0].msg });
-    } else {
-      // Data from form is valid.
-      return res.send("Comment saved!");
-    }
-  }),
-];
-
-exports.comment_delete = [
-  asyncHandler(async (req, res, next) => {
-    await Comment.findByIdAndDelete(req.body.commentID);
-    return res.send(JSON.stringify("comment deleted"));
-  }),
-];
-
-exports.comment_list = [
-  asyncHandler(async (req, res, next) => {
-    const articleComments = await Comment.find(
-      { article: req.params.articleId },
-      "author article date text"
-    )
-      .sort({ title: 1 })
-      .populate("author")
-      .exec();
-    return res.send(articleComments);
-  }),
-];

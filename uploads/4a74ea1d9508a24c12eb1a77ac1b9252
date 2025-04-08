@@ -1,0 +1,13 @@
+curl 'http://parking.procornella.cat:7770/UPDATE/2/0ki8n6r1vamk7x1gxuokm1ib8z0g' \
+  -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'Origin: http://parking.procornella.cat:7770' \
+  -H 'Pragma: no-cache' \
+  -H 'Referer: http://parking.procornella.cat:7770/UPDATE/1/0ki8n6r1vamk7x1gxuokm1ib8z0g' \
+  -H 'Upgrade-Insecure-Requests: 1' \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36' \
+  --data-raw 'EDITIDTYPE=&EDITIDNUMBER=&EDITNAME=&EDITADDRESS1=&EDITADDRESS2=&EDITEMAIL=&EDITTELEPHONE1=&EDITTELEPHONE2=&EDITAGE=&CHKAGREE_CHECKBOX=&BTNCONFIRM=&BTNCANCEL=&BTNEND=&BTNCLOSETERMS=&IWDBMEMO1=&no+group=N&CMBLOCATION=1&CMBFLOOR=3&BTNPLAN=&GRDSPACES=0000000%7C%7C%7C%7C%7C%7C%7C%7C%7C&BTNCLOSE=&BTNSELECT=&BTNCANCELRESERVA=&GRDSTORAGE=0000000000%7C%7C%7C%7C%7C%7C%7C%7C%7C%7C%7C%7C&BTNSELECTSPACE=&BTNSELECTCOMBO=&BTNSELECTSTORAGE=&BTNCANCELRESERVACOMBO=&IW_Action=CMBFLOOR&IW_ActionParam=&IW_FormName=frmMain&IW_FormClass=TfrmMain&IW_width=785&IW_height=698' \
+  --insecure

@@ -27,7 +27,7 @@ model File {
   owner         User     @relation("ownedFiles", fields: [ownerId], references: [id])
   ownerId       Int
   isFolder      Boolean  @default(false)
-  parent        File?    @relation("file", fields: [parentId], references: [id])
+  parent        File?    @relation("file", fields: [parentId], references: [id], onDelete: Cascade)
   parentId      Int?
   children      File[]   @relation("file")
 }

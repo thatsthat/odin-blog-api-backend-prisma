@@ -1,0 +1,1254 @@
+<html data-darkreader-mode="dynamic" data-darkreader-scheme="dark" data-darkreader-proxy-injected="true"><head><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula {
+    filter: invert(100%) hue-rotate(180deg) brightness(90%) contrast(75%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #252728;
+   --darkreader-neutral-text: #c5c3c1;
+   --darkreader-selection-background: #134e95;
+   --darkreader-selection-text: #c5c3c1;
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: #252728 !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: #252728;
+}
+html, body {
+    border-color: #6b655b;
+    color: #c5c3c1;
+}
+a {
+    color: #3a82d6;
+}
+table {
+    border-color: #53595b;
+}
+mark {
+    color: #c5c3c1;
+}
+::placeholder {
+    color: #9b968e;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #444713 !important;
+    color: #c5c3c1 !important;
+}
+::selection {
+    background-color: #134e95 !important;
+    color: #c5c3c1 !important;
+}
+::-moz-selection {
+    background-color: #134e95 !important;
+    color: #c5c3c1 !important;
+}
+}</style><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="pragma" content="no-cache"> <meta http-equiv="Content-Script-Type" content="text/javascript"><style type="text/css">.IWDBLABEL15CSS {position:absolute;left:3px;top:175px;z-index:100;width:82px;height:13px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: underline;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLRSPACE2CSS {position:absolute;left:322px;top:207px;z-index:100;font-style:normal;font-weight:bold;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.IWDBLABEL14CSS {position:absolute;left:170px;top:175px;z-index:100;width:82px;height:13px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: underline;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLSPACECSS {position:absolute;left:322px;top:175px;z-index:100;width:82px;height:13px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: underline;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLSTORAGECSS {position:absolute;left:481px;top:175px;z-index:100;width:82px;height:13px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: underline;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLRLOCATION1CSS {position:absolute;left:3px;top:191px;z-index:100;font-style:normal;font-weight:bold;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLRLOCATION2CSS {position:absolute;left:3px;top:207px;z-index:100;font-style:normal;font-weight:bold;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLRSPACE1CSS {position:absolute;left:322px;top:191px;z-index:100;font-style:normal;font-weight:bold;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLRFLOOR2CSS {position:absolute;left:170px;top:207px;z-index:100;font-style:normal;font-weight:bold;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLRFLOOR1CSS {position:absolute;left:170px;top:191px;z-index:100;font-style:normal;font-weight:bold;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.IWDBLABEL11CSS {position:absolute;left:3px;top:135px;z-index:100;width:562px;height:16px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.IWDBLABEL2CSS {position:absolute;left:3px;top:4px;z-index:100;width:327px;height:16px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: underline;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLRSTORAGE2CSS {position:absolute;left:481px;top:207px;z-index:100;font-style:normal;font-weight:bold;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.TIWGRADIENT2CSS {position:absolute;left:-2px;top:-2px;z-index:99;width:586px;height:305px;font-style:normal;font-weight:normal;font-size:10px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLRSTORAGE1CSS {position:absolute;left:481px;top:191px;z-index:100;font-style:normal;font-weight:bold;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.IWDBLABEL3CSS {position:absolute;left:-4px;top:61px;z-index:100;width:121px;height:13px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.IWDBLABEL6CSS {position:absolute;left:326px;top:40px;z-index:100;width:72px;height:13px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.IWDBLABEL7CSS {position:absolute;left:325px;top:61px;z-index:100;width:73px;height:13px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLAGECSS {position:absolute;left:328px;top:103px;z-index:100;width:70px;height:13px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.IWDBLABEL5CSS {position:absolute;left:10px;top:82px;z-index:100;width:107px;height:13px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.EDITIDTYPECSS {position:absolute;left:67px;top:37px;z-index:100;width:52px;height:17px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.EDITIDNUMBERCSS {position:absolute;left:122px;top:36px;z-index:100;width:194px;height:18px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;text-align:left;}
+.EDITNAMECSS {position:absolute;left:122px;top:57px;z-index:100;width:194px;height:18px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;text-align:left;}
+.EDITADDRESS1CSS {position:absolute;left:122px;top:78px;z-index:100;width:194px;height:18px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;text-align:left;}
+.EDITADDRESS2CSS {position:absolute;left:122px;top:99px;z-index:100;width:194px;height:18px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;text-align:left;}
+.EDITEMAILCSS {position:absolute;left:403px;top:36px;z-index:100;width:172px;height:18px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;text-align:left;}
+.EDITTELEPHONE1CSS {position:absolute;left:403px;top:57px;z-index:100;width:172px;height:18px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;text-align:left;}
+.EDITTELEPHONE2CSS {position:absolute;left:403px;top:78px;z-index:100;width:172px;height:18px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;text-align:left;}
+.EDITAGECSS {position:absolute;left:403px;top:99px;z-index:100;width:32px;height:18px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;text-align:right;}
+.CHKAGREECSS {position:absolute;left:3px;top:235px;z-index:100;width:18px;height:18px;font-style:normal;font-weight:normal;font-size:13px;text-decoration: none;}
+.BTNCONFIRMCSS {position:absolute;left:199px;top:271px;z-index:100;width:91px;height:25px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.BTNCANCELCSS {position:absolute;left:292px;top:271px;z-index:100;width:91px;height:25px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.LNKAGREECSS {position:absolute;left:28px;top:237px;z-index:100;width:489px;height:17px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: underline;font-family:Verdana, Helvetica, Sans-Serif;cursor :pointer;}
+.IWDBLABEL4CSS {position:absolute;left:5px;top:76px;z-index:100;width:507px;height:16px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLEUROCSS {position:absolute;left:117px;top:47px;z-index:100;font-style:normal;font-weight:bold;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLFINGRESCSS {position:absolute;left:12px;top:47px;z-index:100;width:102px;height:14px;font-style:normal;font-weight:bold;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.TIWGRADIENT3CSS {position:absolute;left:-2px;top:-2px;z-index:99;width:521px;height:161px;font-style:normal;font-weight:normal;font-size:10px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.IWDBLABEL23CSS {position:absolute;left:5px;top:12px;z-index:100;width:507px;height:16px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.BTNENDCSS {position:absolute;left:213px;top:127px;z-index:100;width:91px;height:25px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.TIWGRADIENT4CSS {position:absolute;left:-2px;top:-2px;z-index:99;width:601px;height:447px;font-style:normal;font-weight:normal;font-size:10px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.BTNCLOSETERMSCSS {position:absolute;left:253px;top:411px;z-index:100;width:91px;height:25px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.IWDBMEMO1CSS {position:absolute;left:10px;top:9px;z-index:100;width:577px;height:393px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBL2CSS {position:absolute;left:-1px;top:143px;z-index:100;width:801px;height:18px;font-style:normal;font-weight:bold;font-size:14px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;color:#FFA500;}
+.LBLNOSPACESCSS {position:absolute;left:-1px;top:274px;z-index:100;width:800px;height:16px;font-style:normal;font-weight:bold;font-size:13px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;color:#FFA500;}
+.LBL1CSS {position:absolute;left:-1px;top:123px;z-index:100;width:800px;height:18px;font-style:normal;font-weight:bold;font-size:14px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;color:#FFA500;}
+.IMGEMDUCSACSS {position:absolute;left:-1px;top:0px;z-index:100;font-style:normal;font-weight:normal;font-size:13px;text-decoration: none;}
+.IWHRULE1CSS {position:absolute;left:-1px;top:110px;z-index:101;width:801px;height:1px;font-style:normal;font-weight:normal;font-size:13px;text-decoration: none;}
+.LBLPACKTEXTCSS {position:absolute;left:0px;top:537px;z-index:100;width:90px;height:18px;font-style:normal;font-weight:bold;font-size:13px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;color:#FFA500;}
+.DLGDETAILSCSS {position:absolute;left:105px;top:146px;z-index:600100;width:588px;height:307px;clip:rect(0px,588px,307px,0px);font-style:normal;font-weight:normal;font-size:13px;text-decoration: none;}
+.DLGINGRESOCSS {position:absolute;left:138px;top:218px;z-index:600100;width:523px;height:163px;clip:rect(0px,523px,163px,0px);font-style:normal;font-weight:normal;font-size:13px;text-decoration: none;}
+.DLGTERMSCSS {position:absolute;left:98px;top:75px;z-index:600100;width:603px;height:449px;clip:rect(0px,603px,449px,0px);font-style:normal;font-weight:normal;font-size:13px;text-decoration: none;}
+.LBL4CSS {position:absolute;left:-1px;top:143px;z-index:100;width:799px;height:18px;font-style:normal;font-weight:bold;font-size:14px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;color:#FFA500;}
+.LBL3CSS {position:absolute;left:-1px;top:123px;z-index:100;width:801px;height:18px;font-style:normal;font-weight:bold;font-size:14px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;color:#FFA500;}
+.LBLHEADERCSS {position:absolute;left:183px;top:36px;z-index:100;width:432px;height:38px;font-style:normal;font-weight:bold;font-size:26px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;color:#FFA500;}
+.LBLCOPYRIGHTCSS {position:absolute;left:292px;top:583px;z-index:100;font-style:normal;font-weight:normal;font-size:8px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.LBLOFFLINECSS {position:absolute;left:-1px;top:240px;z-index:100;width:612px;height:16px;font-style:normal;font-weight:bold;font-size:13px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;color:#FFA500;}
+.TIWGRADIENT1CSS {position:absolute;left:-1px;top:-1px;z-index:99;width:493px;height:683px;font-style:normal;font-weight:normal;font-size:13px;font-family:'Verdana';text-decoration: none;}
+.LOCSS {position:absolute;left:-199px;top:790px;z-index:100;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.BTNPACKYESCSS {position:absolute;left:103px;top:535px;z-index:100;width:44px;height:17px;font-style:normal;font-weight:bold;font-size:13px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;color:#FFA500;}
+.BTNPACKNOCSS {position:absolute;left:149px;top:535px;z-index:100;width:49px;height:17px;font-style:normal;font-weight:bold;font-size:13px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;color:#FFA500;}
+.CMBLOCATIONCSS {position:absolute;left:159px;top:184px;z-index:110;width:145px;height:23px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.CMBFLOORCSS {position:absolute;left:308px;top:184px;z-index:110;width:111px;height:23px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.BTNPLANCSS {position:absolute;left:423px;top:180px;z-index:110;width:94px;height:27px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.GRDSPACESCSS {position:absolute;left:140px;top:180px;z-index:100;width:525px;height:336px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.BTNCLOSECSS {position:absolute;left:259px;top:339px;z-index:100;width:91px;height:25px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.BTNSELECTCSS {position:absolute;left:470px;top:533px;z-index:100;width:192px;height:25px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.BTNCANCELRESERVACSS {position:absolute;left:276px;top:533px;z-index:100;width:192px;height:25px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.GRDSTORAGECSS {position:absolute;left:6px;top:180px;z-index:100;width:795px;height:336px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.BTNSELECTSPACECSS {position:absolute;left:217px;top:533px;z-index:100;width:192px;height:25px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.BTNSELECTCOMBOCSS {position:absolute;left:603px;top:533px;z-index:100;width:192px;height:25px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.BTNSELECTSTORAGECSS {position:absolute;left:410px;top:533px;z-index:100;width:192px;height:25px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+.BTNCANCELRESERVACOMBOCSS {position:absolute;left:410px;top:533px;z-index:100;width:192px;height:25px;font-style:normal;font-weight:normal;font-size:12px;font-family:'Verdana';text-decoration: none;font-family:Verdana, Helvetica, Sans-Serif;}
+</style><style class="darkreader darkreader--sync" media="screen"></style><script type="text/javascript" src="/js/IWPreScript.js_9.0.42"></script><script type="text/javascript">var LBL2IWCL = null;var LBLNOSPACESIWCL = null;var LBL1IWCL = null;var IMGEMDUCSAIWCL = null;var IWHRULE1IWCL = null;var LBLPACKTEXTIWCL = null;var DLGDETAILS_lockerIWCL = null;var DLGDETAILSIWCL = null;var IWDBLABEL15IWCL = null;var LBLRSPACE2IWCL = null;var IWDBLABEL14IWCL = null;var LBLSPACEIWCL = null;var LBLSTORAGEIWCL = null;var LBLRLOCATION1IWCL = null;var LBLRLOCATION2IWCL = null;var LBLRSPACE1IWCL = null;var LBLRFLOOR2IWCL = null;var LBLRFLOOR1IWCL = null;var IWDBLABEL11IWCL = null;var IWDBLABEL2IWCL = null;var LBLRSTORAGE2IWCL = null;var TIWGRADIENT2IWCL = null;var LBLRSTORAGE1IWCL = null;var IWDBLABEL3IWCL = null;var IWDBLABEL6IWCL = null;var IWDBLABEL7IWCL = null;var LBLAGEIWCL = null;var IWDBLABEL5IWCL = null;var EDITIDTYPEIWCL = null;function EDITIDTYPE_onchange(event) {
+return SubmitClickConfirm('EDITIDTYPE','', true, '');
+}
+var EDITIDNUMBERIWCL = null;function EDITIDNUMBER_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITIDNUMBER_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITIDNUMBER_onkeypress0(event) {
+return AEKeyPress(this,3,event,0,",",0,'-1',false);
+}
+function EDITIDNUMBER_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITIDNUMBER_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITIDNUMBER_onkeyup(event) {
+AEKeyUp(this,event,false,3,0);
+return true;
+}
+var EDITNAMEIWCL = null;function EDITNAME_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITNAME_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITNAME_onkeypress0(event) {
+return AEKeyPress(this,0,event,0,",",0,'-1',false);
+}
+function EDITNAME_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITNAME_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITNAME_onkeyup(event) {
+AEKeyUp(this,event,false,0,0);
+return true;
+}
+var EDITADDRESS1IWCL = null;function EDITADDRESS1_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITADDRESS1_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITADDRESS1_onkeypress0(event) {
+return AEKeyPress(this,0,event,0,",",0,'-1',false);
+}
+function EDITADDRESS1_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITADDRESS1_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITADDRESS1_onkeyup(event) {
+AEKeyUp(this,event,false,0,0);
+return true;
+}
+var EDITADDRESS2IWCL = null;function EDITADDRESS2_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITADDRESS2_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITADDRESS2_onkeypress0(event) {
+return AEKeyPress(this,0,event,0,",",0,'-1',false);
+}
+function EDITADDRESS2_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITADDRESS2_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITADDRESS2_onkeyup(event) {
+AEKeyUp(this,event,false,0,0);
+return true;
+}
+var EDITEMAILIWCL = null;function EDITEMAIL_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITEMAIL_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITEMAIL_onkeypress0(event) {
+return AEKeyPress(this,5,event,0,",",0,'-1',false);
+}
+function EDITEMAIL_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITEMAIL_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITEMAIL_onkeyup(event) {
+AEKeyUp(this,event,false,5,0);
+return true;
+}
+var EDITTELEPHONE1IWCL = null;function EDITTELEPHONE1_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITTELEPHONE1_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITTELEPHONE1_onkeypress0(event) {
+return AEKeyPress(this,1,event,0,",",0,'-1',false);
+}
+function EDITTELEPHONE1_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITTELEPHONE1_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITTELEPHONE1_onkeyup(event) {
+AEKeyUp(this,event,false,1,0);
+return true;
+}
+var EDITTELEPHONE2IWCL = null;function EDITTELEPHONE2_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITTELEPHONE2_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITTELEPHONE2_onkeypress0(event) {
+return AEKeyPress(this,1,event,0,",",0,'-1',false);
+}
+function EDITTELEPHONE2_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITTELEPHONE2_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITTELEPHONE2_onkeyup(event) {
+AEKeyUp(this,event,false,1,0);
+return true;
+}
+var EDITAGEIWCL = null;function EDITAGE_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITAGE_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITAGE_onkeypress0(event) {
+return AEKeyPress(this,1,event,0,",",0,'-1',false);
+}
+function EDITAGE_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITAGE_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+function EDITAGE_onkeyup(event) {
+AEKeyUp(this,event,false,1,0);
+return true;
+}
+var CHKAGREEIWCL = null;function CHKAGREE_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function CHKAGREE_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function CHKAGREE_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function CHKAGREE_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+var BTNCONFIRMIWCL = null;function BTNCONFIRM_onclick(event) {
+return SubmitClickConfirm('BTNCONFIRM','', true, '');
+}
+var BTNCANCELIWCL = null;function BTNCANCEL_onclick(event) {
+return SubmitClickConfirm('BTNCANCEL','', true, '');
+}
+var LNKAGREEIWCL = null;function LNKAGREE_onclick(event) {
+if (document.getElementById('LNKAGREE').href) {SubmitClickConfirm('LNKAGREE','', false, '');return false;} else return false;
+}
+var DLGINGRESO_lockerIWCL = null;var DLGINGRESOIWCL = null;var IWDBLABEL4IWCL = null;var LBLEUROIWCL = null;var LBLFINGRESIWCL = null;var TIWGRADIENT3IWCL = null;var IWDBLABEL23IWCL = null;var BTNENDIWCL = null;function BTNEND_onclick(event) {
+return SubmitClickConfirm('BTNEND','', true, '');
+}
+var DLGTERMS_lockerIWCL = null;var DLGTERMSIWCL = null;var TIWGRADIENT4IWCL = null;var BTNCLOSETERMSIWCL = null;function BTNCLOSETERMS_onclick(event) {
+return SubmitClickConfirm('BTNCLOSETERMS','', true, '');
+}
+var IWDBMEMO1IWCL = null;var LBL4IWCL = null;var LBL3IWCL = null;var LBLHEADERIWCL = null;var LBLCOPYRIGHTIWCL = null;var LBLOFFLINEIWCL = null;var TIWGRADIENT1IWCL = null;var LOIWCL = null;var BTNPACKYESIWCL = null;function BTNPACKYES_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function BTNPACKYES_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function BTNPACKYES_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function BTNPACKYES_onclick0(event) {
+return SubmitClickConfirm('BTNPACKYES','', true, '');
+}
+function BTNPACKYES_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+var BTNPACKNOIWCL = null;function BTNPACKNO_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function BTNPACKNO_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function BTNPACKNO_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function BTNPACKNO_onclick0(event) {
+return SubmitClickConfirm('BTNPACKNO','', true, '');
+}
+function BTNPACKNO_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+var CMBLOCATIONIWCL = null;function CMBLOCATION_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function CMBLOCATION_onchange0(event) {
+return SubmitClickConfirm('CMBLOCATION','', true, '');
+}
+function CMBLOCATION_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function CMBLOCATION_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function CMBLOCATION_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+var CMBFLOORIWCL = null;function CMBFLOOR_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function CMBFLOOR_onchange0(event) {
+return SubmitClickConfirm('CMBFLOOR','', true, '');
+}
+function CMBFLOOR_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function CMBFLOOR_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function CMBFLOOR_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+var BTNPLANIWCL = null;function BTNPLAN_onclick(event) {
+ReleaseLock();
+GActivateLock=false;
+return true;
+}
+function BTNPLAN_onclick0(event) {
+return SubmitClickConfirm('BTNPLAN','', true, '');
+}
+var GRDSPACESIWCL = null;function GRDSPACES_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function GRDSPACES_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function GRDSPACES_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function GRDSPACES_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+var BTNCLOSEIWCL = null;function BTNCLOSE_onclick(event) {
+window.close()
+}
+var BTNSELECTIWCL = null;function BTNSELECT_onclick(event) {
+return SubmitClickConfirm('BTNSELECT','', true, '');
+}
+var BTNCANCELRESERVAIWCL = null;function BTNCANCELRESERVA_onclick(event) {
+return SubmitClickConfirm('BTNCANCELRESERVA','', true, '');
+}
+var GRDSTORAGEIWCL = null;function GRDSTORAGE_onchange(event) {
+OnControlContentChange(event);
+return true;
+}
+function GRDSTORAGE_onkeypress(event) {
+OnControlContentChange(event);
+return true;
+}
+function GRDSTORAGE_onclick(event) {
+OnControlContentChange(event);
+return true;
+}
+function GRDSTORAGE_onselect(event) {
+OnControlContentChange(event);
+return true;
+}
+var BTNSELECTSPACEIWCL = null;function BTNSELECTSPACE_onclick(event) {
+return SubmitClickConfirm('BTNSELECTSPACE','', true, '');
+}
+var BTNSELECTCOMBOIWCL = null;function BTNSELECTCOMBO_onclick(event) {
+return SubmitClickConfirm('BTNSELECTCOMBO','', true, '');
+}
+var BTNSELECTSTORAGEIWCL = null;function BTNSELECTSTORAGE_onclick(event) {
+return SubmitClickConfirm('BTNSELECTSTORAGE','', true, '');
+}
+var BTNCANCELRESERVACOMBOIWCL = null;function BTNCANCELRESERVACOMBO_onclick(event) {
+return SubmitClickConfirm('BTNCANCELRESERVACOMBO','', true, '');
+}
+function G0PartialDynInit() {for(di=0;di<0;di++) {
+ + IWTop().G0DynaEditPartialUpdate(null,0,di,-1); }
+}
+function G0ScrollInit() {DoScrollIntoView(GRDSPACESObj);
+}
+function G0FocusInit(ctrl) {
+}
+function G0DynaEditPartialUpdate(ctrl,c,r,sel) {
+C1 = 1*IWTop().document.getElementById("G0D"+r+"C1").innerHTML;
+C2 = 1*IWTop().document.getElementById("G0D"+r+"C2").innerHTML;
+C3 = 1*IWTop().document.getElementById("G0D"+r+"C3").innerHTML;
+C4 = 1*IWTop().document.getElementById("G0D"+r+"C4").innerHTML;
+C5 = 1*IWTop().document.getElementById("G0D"+r+"C5").innerHTML;
+if (ctrl != null) {
+  if (sel == 2) IWTop().DynaCheck(GRDSPACESObj,ctrl,r,c);
+  else IWTop().DynaEdit(GRDSPACESObj,ctrl,r,c); }
+}
+function GRDSPACESObj(){
+  this.id = "GRDSPACES";
+  this.fids = "G0";
+  this.hasdynedits = false;
+  this.pcol = ""
+  this.stcol = "#000000"
+  this.scol = ""
+  this.bands = false
+  this.activerowcolor = ""
+  this.activerowfontcolor = ""
+  this.myEl = ""
+  this.colchecktrue = new Array(6)
+  this.colcheckfalse = new Array(6)
+  this.coltype = new Array(6)
+  this.coledit = new Array(6)
+  this.columncolors = new Array(6)
+  this.colwidth = new Array(6)
+  this.coltextcolors = new Array(6)
+  this.combopromptindex = new Array(6)
+  this.combopromptindexlist = new Array(6)
+  this.combopromptsave = new Array(6)
+  this.combopromptvalue = new Array(6)
+  this.cellstate = new Array(0)
+  this.detailstate = new Array(0)
+  this.szw = 0;
+  this.event = null;
+  this.mvc = 0;
+  this.newval = 0;
+  this.origval = 0;
+  this.origwidth = -1;
+  this.origfullwidth = -1
+  this.rcount = 13;
+  this.selcol = -1;
+  this.selrow = -1;
+  this.seledit = ""
+  this.editcol = -1
+  this.editrow = -1
+  this.checkrow = -1
+  this.origval = ""
+  this.focusel = null;
+  this.ccount = 6;
+  this.scrollpos = 0;
+  this.scrollleft = 0;
+  this.scrollintoview = true;
+  this.pageoffset = 2;
+  this.rowoffset = 0;
+  this.rowsonpage = 0;
+  this.decimalpoint = 46;
+  this.showselect = true;
+  this.curpage = 0;
+  this.selectcolor = "#0078D7";
+  this.selectfontcolor = "#FFFFFF";
+  this.hovercolor = "";
+  this.hoverfontcolor = "";
+  this.fontcolor = "";
+  this.oncheckclick = false;
+  this.onimageclick = false;
+  this.onbuttonclick = false;
+  this.onlinkclick = false;
+  this.oncombochange = false;
+  this.oncomboprompt = false;
+  this.onnodeclose = false;
+  this.onnodeopen = false;
+  this.onvalueclick = false;
+  this.oncellclick = false;
+  this.onasynccellclick = false;
+  this.onasyncbuttonclick = false;
+  this.onasynccheckclick = false;
+  this.onasyncrowselect = false;
+  this.onasyncactiverowmove = false;
+  this.onasyncimageclick = false;
+  this.onasynclinkclick = false;
+  this.onasynccombochange = false;
+  this.onasynccomboprompt = false;
+  this.onasyncedit = false;
+  this.onasynceditdone = false;
+  this.showrowheader = false;
+  this.showcolheader = true;
+  this.showfooter = false;
+  this.autoedit = false;
+  this.advanceonreturn = false;
+  this.scrollpersistent = true;
+  this.editselectall = false;
+GRDSPACESObj.prototype.colsizemove = function(e) {
+ obj = GRDSPACESObj
+ if (ie)
+  nval = obj.event.x - obj.szw
+ else
+  nval = e.pageX - obj.szw
+  newval = obj.origval + parseInt(nval);
+  if (newval <= 0)
+    newval = obj.origval;
+if (ie)
+  document.selection.empty();
+if (navigator.appName == "Netscape")
+  window.getSelection().removeAllRanges();
+    if (!document.styleSheets) return;
+   var i;
+   for (i = 0; i <= document.styleSheets.length ; i++)
+   {
+    if (document.styleSheets[i].title == "GRDSPACESnowrapcol")
+      break;
+   }
+    var mycss = new Array();
+    if (document.styleSheets[i].cssRules)  // Mozilla
+       mycss = document.styleSheets[i].cssRules;
+    else
+       mycss = document.styleSheets[i].rules;  // IE
+    if (newval > 5)
+      mycss[obj.mvc - 1].style.width = newval - 5;
+    else
+      mycss[obj.mvc - 1].style.width = 1;
+    s = obj.fids + "c" + obj.mvc + "r" + 1;
+    document.getElementById(s).width = newval;
+    sh = obj.fids + "CH" + obj.mvc;
+    document.getElementById(sh).style.width = newval;
+    document.getElementById(sh).firstChild.style.width = newval;
+    var mg = document.getElementById(obj.fids + "mg");
+      mg.width = obj.origwidth + parseInt(nval);
+      mg.firstChild.width = mg.width;
+      mg.firstChild.firstChild.width = obj.origfullwidth + parseInt(nval);
+    var div3 = document.getElementById(obj.id + "div3");
+    if (div3)
+      div3.firstChild.width = mg.width;
+
+}
+GRDSPACESObj.prototype.clientgridkeydown = function(obj,c,r,event) {
+
+}
+GRDSPACESObj.prototype.clientcheckclick = function(obj,c,r) {
+
+}
+GRDSPACESObj.prototype.clientimageclick = function(obj,c,r,s) {
+
+}
+GRDSPACESObj.prototype.clientbuttonclick = function(obj,c,r,s) {
+
+}
+GRDSPACESObj.prototype.clienteditchange = function(obj,ctrl,c,r) {
+
+}
+GRDSPACESObj.prototype.clientdyneditchange = function(obj,ctrl,c,r) {
+
+}
+GRDSPACESObj.prototype.clienteditdone = function(obj,ctrl,c,r) {
+
+}
+GRDSPACESObj.prototype.clientcombochange = function(obj,ctrl,c,r) {
+
+}
+GRDSPACESObj.prototype.clientnodeclick = function(obj,r) {
+
+}
+GRDSPACESObj.prototype.clienthoverrow = function(obj,r) {
+
+}
+GRDSPACESObj.prototype.clientcellclick = function(obj,c,r) {
+
+}
+GRDSPACESObj.prototype.clientpopupeditok = function(obj,ctrl, cellid, c, r) {
+
+}
+GRDSPACESObj.prototype.clientpopupeditcancel = function(obj,ctrl,c,r) {
+
+}
+  this.maxpages = 1;
+this.columncolors[0] = "#ffffff"
+this.coltextcolors[0] = "#000000"
+this.columncolors[1] = "#ffffff"
+this.coltextcolors[1] = "#000000"
+this.columncolors[2] = "#ffffff"
+this.coltextcolors[2] = "#000000"
+this.columncolors[3] = "#ffffff"
+this.coltextcolors[3] = "#000000"
+this.columncolors[4] = "#ffffff"
+this.coltextcolors[4] = "#000000"
+this.columncolors[5] = "#ffffff"
+this.coltextcolors[5] = "#000000"
+this.coltype[0] = "RadioButton"
+this.coltype[1] = "Normal"
+this.coltype[2] = "Normal"
+this.coltype[3] = "Normal"
+this.coltype[4] = "Normal"
+this.coltype[5] = "Normal"
+this.coledit[0] = "None"
+this.coledit[1] = "None"
+this.coledit[2] = "None"
+this.coledit[3] = "None"
+this.coledit[4] = "None"
+this.coledit[5] = "None"
+this.colchecktrue[0] = "true"
+this.colcheckfalse[0] = "false"
+this.colchecktrue[1] = "true"
+this.colcheckfalse[1] = "false"
+this.colchecktrue[2] = "true"
+this.colcheckfalse[2] = "false"
+this.colchecktrue[3] = "true"
+this.colcheckfalse[3] = "false"
+this.colchecktrue[4] = "true"
+this.colcheckfalse[4] = "false"
+this.colchecktrue[5] = "true"
+this.colcheckfalse[5] = "false"
+this.colwidth[0] = "45"
+this.colwidth[1] = "100"
+this.colwidth[2] = "100"
+this.colwidth[3] = "100"
+this.colwidth[4] = "90"
+this.colwidth[5] = "90"
+this.combopromptindex[0] = -1
+this.combopromptindex[1] = -1
+this.combopromptindex[2] = -1
+this.combopromptindex[3] = -1
+this.combopromptindex[4] = -1
+this.combopromptindex[5] = -1
+this.combopromptindexlist[0] = ""
+this.combopromptindexlist[1] = ""
+this.combopromptindexlist[2] = ""
+this.combopromptindexlist[3] = ""
+this.combopromptindexlist[4] = ""
+this.combopromptindexlist[5] = ""
+this.combopromptvalue[0] = ""
+this.combopromptvalue[1] = ""
+this.combopromptvalue[2] = ""
+this.combopromptvalue[3] = ""
+this.combopromptvalue[4] = ""
+this.combopromptvalue[5] = ""
+this.combopromptsave[0] = -1
+this.combopromptsave[1] = -1
+this.combopromptsave[2] = -1
+this.combopromptsave[3] = -1
+this.combopromptsave[4] = -1
+this.combopromptsave[5] = -1
+  this.scrollstyle = "scNever"
+}
+GRDSPACESObj = new GRDSPACESObj();
+function GRDSPACESsbwidth(){ 
+  if (sbw == -1)
+	  sbw = getScrollBarWidth();
+
+
+  var div3 = document.getElementById("GRDSPACESdiv3");
+
+
+
+
+}
+
+function G0PostValidate(sel) {
+submval = FindElem('GRDSPACES').value;
+s_ar= submval.split("|");
+return SubmitClick('GRDSPACES','PostRow'+sel);
+}
+function G0PartialDynInit() {for(di=0;di<0;di++) {
+ + IWTop().G0DynaEditPartialUpdate(null,0,di,-1); }
+}
+function G0ScrollInit() {DoScrollIntoView(GRDSTORAGEObj);
+}
+function G0FocusInit(ctrl) {
+}
+function G0DynaEditPartialUpdate(ctrl,c,r,sel) {
+C1 = 1*IWTop().document.getElementById("G0D"+r+"C1").innerHTML;
+C2 = 1*IWTop().document.getElementById("G0D"+r+"C2").innerHTML;
+C3 = 1*IWTop().document.getElementById("G0D"+r+"C3").innerHTML;
+C4 = 1*IWTop().document.getElementById("G0D"+r+"C4").innerHTML;
+C5 = 1*IWTop().document.getElementById("G0D"+r+"C5").innerHTML;
+C6 = 1*IWTop().document.getElementById("G0D"+r+"C6").innerHTML;
+C7 = 1*IWTop().document.getElementById("G0D"+r+"C7").innerHTML;
+C8 = 1*IWTop().document.getElementById("G0D"+r+"C8").innerHTML;
+if (ctrl != null) {
+  if (sel == 2) IWTop().DynaCheck(GRDSTORAGEObj,ctrl,r,c);
+  else IWTop().DynaEdit(GRDSTORAGEObj,ctrl,r,c); }
+}
+function GRDSTORAGEObj(){
+  this.id = "GRDSTORAGE";
+  this.fids = "G0";
+  this.hasdynedits = false;
+  this.pcol = ""
+  this.stcol = "#000000"
+  this.scol = ""
+  this.bands = false
+  this.activerowcolor = ""
+  this.activerowfontcolor = ""
+  this.myEl = ""
+  this.colchecktrue = new Array(9)
+  this.colcheckfalse = new Array(9)
+  this.coltype = new Array(9)
+  this.coledit = new Array(9)
+  this.columncolors = new Array(9)
+  this.colwidth = new Array(9)
+  this.coltextcolors = new Array(9)
+  this.combopromptindex = new Array(9)
+  this.combopromptindexlist = new Array(9)
+  this.combopromptsave = new Array(9)
+  this.combopromptvalue = new Array(9)
+  this.cellstate = new Array(0)
+  this.detailstate = new Array(0)
+  this.szw = 0;
+  this.event = null;
+  this.mvc = 0;
+  this.newval = 0;
+  this.origval = 0;
+  this.origwidth = -1;
+  this.origfullwidth = -1
+  this.rcount = 13;
+  this.selcol = -1;
+  this.selrow = -1;
+  this.seledit = ""
+  this.editcol = -1
+  this.editrow = -1
+  this.checkrow = -1
+  this.origval = ""
+  this.focusel = null;
+  this.ccount = 9;
+  this.scrollpos = 0;
+  this.scrollleft = 0;
+  this.scrollintoview = true;
+  this.pageoffset = 2;
+  this.rowoffset = 0;
+  this.rowsonpage = 0;
+  this.decimalpoint = 46;
+  this.showselect = true;
+  this.curpage = 0;
+  this.selectcolor = "#0078D7";
+  this.selectfontcolor = "#FFFFFF";
+  this.hovercolor = "";
+  this.hoverfontcolor = "";
+  this.fontcolor = "";
+  this.oncheckclick = false;
+  this.onimageclick = false;
+  this.onbuttonclick = false;
+  this.onlinkclick = false;
+  this.oncombochange = false;
+  this.oncomboprompt = false;
+  this.onnodeclose = false;
+  this.onnodeopen = false;
+  this.onvalueclick = false;
+  this.oncellclick = false;
+  this.onasynccellclick = false;
+  this.onasyncbuttonclick = false;
+  this.onasynccheckclick = false;
+  this.onasyncrowselect = false;
+  this.onasyncactiverowmove = false;
+  this.onasyncimageclick = false;
+  this.onasynclinkclick = false;
+  this.onasynccombochange = false;
+  this.onasynccomboprompt = false;
+  this.onasyncedit = false;
+  this.onasynceditdone = false;
+  this.showrowheader = false;
+  this.showcolheader = true;
+  this.showfooter = false;
+  this.autoedit = false;
+  this.advanceonreturn = false;
+  this.scrollpersistent = true;
+  this.editselectall = false;
+GRDSTORAGEObj.prototype.colsizemove = function(e) {
+ obj = GRDSTORAGEObj
+ if (ie)
+  nval = obj.event.x - obj.szw
+ else
+  nval = e.pageX - obj.szw
+  newval = obj.origval + parseInt(nval);
+  if (newval <= 0)
+    newval = obj.origval;
+if (ie)
+  document.selection.empty();
+if (navigator.appName == "Netscape")
+  window.getSelection().removeAllRanges();
+    if (!document.styleSheets) return;
+   var i;
+   for (i = 0; i <= document.styleSheets.length ; i++)
+   {
+    if (document.styleSheets[i].title == "GRDSTORAGEnowrapcol")
+      break;
+   }
+    var mycss = new Array();
+    if (document.styleSheets[i].cssRules)  // Mozilla
+       mycss = document.styleSheets[i].cssRules;
+    else
+       mycss = document.styleSheets[i].rules;  // IE
+    if (newval > 5)
+      mycss[obj.mvc - 1].style.width = newval - 5;
+    else
+      mycss[obj.mvc - 1].style.width = 1;
+    s = obj.fids + "c" + obj.mvc + "r" + 1;
+    document.getElementById(s).width = newval;
+    sh = obj.fids + "CH" + obj.mvc;
+    document.getElementById(sh).style.width = newval;
+    document.getElementById(sh).firstChild.style.width = newval;
+    var mg = document.getElementById(obj.fids + "mg");
+      mg.width = obj.origwidth + parseInt(nval);
+      mg.firstChild.width = mg.width;
+      mg.firstChild.firstChild.width = obj.origfullwidth + parseInt(nval);
+    var div3 = document.getElementById(obj.id + "div3");
+    if (div3)
+      div3.firstChild.width = mg.width;
+
+}
+GRDSTORAGEObj.prototype.clientgridkeydown = function(obj,c,r,event) {
+
+}
+GRDSTORAGEObj.prototype.clientcheckclick = function(obj,c,r) {
+
+}
+GRDSTORAGEObj.prototype.clientimageclick = function(obj,c,r,s) {
+
+}
+GRDSTORAGEObj.prototype.clientbuttonclick = function(obj,c,r,s) {
+
+}
+GRDSTORAGEObj.prototype.clienteditchange = function(obj,ctrl,c,r) {
+
+}
+GRDSTORAGEObj.prototype.clientdyneditchange = function(obj,ctrl,c,r) {
+
+}
+GRDSTORAGEObj.prototype.clienteditdone = function(obj,ctrl,c,r) {
+
+}
+GRDSTORAGEObj.prototype.clientcombochange = function(obj,ctrl,c,r) {
+
+}
+GRDSTORAGEObj.prototype.clientnodeclick = function(obj,r) {
+
+}
+GRDSTORAGEObj.prototype.clienthoverrow = function(obj,r) {
+
+}
+GRDSTORAGEObj.prototype.clientcellclick = function(obj,c,r) {
+
+}
+GRDSTORAGEObj.prototype.clientpopupeditok = function(obj,ctrl, cellid, c, r) {
+
+}
+GRDSTORAGEObj.prototype.clientpopupeditcancel = function(obj,ctrl,c,r) {
+
+}
+  this.maxpages = 1;
+this.columncolors[0] = "#ffffff"
+this.coltextcolors[0] = "#000000"
+this.columncolors[1] = "#ffffff"
+this.coltextcolors[1] = "#000000"
+this.columncolors[2] = "#ffffff"
+this.coltextcolors[2] = "#000000"
+this.columncolors[3] = "#ffffff"
+this.coltextcolors[3] = "#000000"
+this.columncolors[4] = "#ffffff"
+this.coltextcolors[4] = "#000000"
+this.columncolors[5] = "#ffffff"
+this.coltextcolors[5] = "#000000"
+this.columncolors[6] = "#ffffff"
+this.coltextcolors[6] = "#000000"
+this.columncolors[7] = "#ffffff"
+this.coltextcolors[7] = "#000000"
+this.columncolors[8] = "#ffffff"
+this.coltextcolors[8] = "#000000"
+this.coltype[0] = "RadioButton"
+this.coltype[1] = "Normal"
+this.coltype[2] = "Normal"
+this.coltype[3] = "Normal"
+this.coltype[4] = "Normal"
+this.coltype[5] = "Normal"
+this.coltype[6] = "Normal"
+this.coltype[7] = "Normal"
+this.coltype[8] = "Normal"
+this.coledit[0] = "None"
+this.coledit[1] = "None"
+this.coledit[2] = "None"
+this.coledit[3] = "None"
+this.coledit[4] = "None"
+this.coledit[5] = "None"
+this.coledit[6] = "None"
+this.coledit[7] = "None"
+this.coledit[8] = "None"
+this.colchecktrue[0] = "true"
+this.colcheckfalse[0] = "false"
+this.colchecktrue[1] = "true"
+this.colcheckfalse[1] = "false"
+this.colchecktrue[2] = "true"
+this.colcheckfalse[2] = "false"
+this.colchecktrue[3] = "true"
+this.colcheckfalse[3] = "false"
+this.colchecktrue[4] = "true"
+this.colcheckfalse[4] = "false"
+this.colchecktrue[5] = "true"
+this.colcheckfalse[5] = "false"
+this.colchecktrue[6] = "true"
+this.colcheckfalse[6] = "false"
+this.colchecktrue[7] = "true"
+this.colcheckfalse[7] = "false"
+this.colchecktrue[8] = "true"
+this.colcheckfalse[8] = "false"
+this.colwidth[0] = "45"
+this.colwidth[1] = "100"
+this.colwidth[2] = "100"
+this.colwidth[3] = "100"
+this.colwidth[4] = "90"
+this.colwidth[5] = "90"
+this.colwidth[6] = "90"
+this.colwidth[7] = "90"
+this.colwidth[8] = "90"
+this.combopromptindex[0] = -1
+this.combopromptindex[1] = -1
+this.combopromptindex[2] = -1
+this.combopromptindex[3] = -1
+this.combopromptindex[4] = -1
+this.combopromptindex[5] = -1
+this.combopromptindex[6] = -1
+this.combopromptindex[7] = -1
+this.combopromptindex[8] = -1
+this.combopromptindexlist[0] = ""
+this.combopromptindexlist[1] = ""
+this.combopromptindexlist[2] = ""
+this.combopromptindexlist[3] = ""
+this.combopromptindexlist[4] = ""
+this.combopromptindexlist[5] = ""
+this.combopromptindexlist[6] = ""
+this.combopromptindexlist[7] = ""
+this.combopromptindexlist[8] = ""
+this.combopromptvalue[0] = ""
+this.combopromptvalue[1] = ""
+this.combopromptvalue[2] = ""
+this.combopromptvalue[3] = ""
+this.combopromptvalue[4] = ""
+this.combopromptvalue[5] = ""
+this.combopromptvalue[6] = ""
+this.combopromptvalue[7] = ""
+this.combopromptvalue[8] = ""
+this.combopromptsave[0] = -1
+this.combopromptsave[1] = -1
+this.combopromptsave[2] = -1
+this.combopromptsave[3] = -1
+this.combopromptsave[4] = -1
+this.combopromptsave[5] = -1
+this.combopromptsave[6] = -1
+this.combopromptsave[7] = -1
+this.combopromptsave[8] = -1
+  this.scrollstyle = "scNever"
+}
+GRDSTORAGEObj = new GRDSTORAGEObj();
+function GRDSTORAGEsbwidth(){ 
+  if (sbw == -1)
+	  sbw = getScrollBarWidth();
+
+
+  var div3 = document.getElementById("GRDSTORAGEdiv3");
+
+
+
+
+}
+
+function G0PostValidate(sel) {
+submval = FindElem('GRDSTORAGE').value;
+s_ar= submval.split("|");
+return SubmitClick('GRDSTORAGE','PostRow'+sel);
+}
+function FormDefaultSubmit(){return false;}var GIsPartialUpdate=true;var GOnResizetimeout=1000;var GURLBase="";var GAppID="1uohrpk0xspzlp1al8ibg142cs5h";var GTrackID=1;function IWTop(){return window;}var GActiveControl = null;history.go(1);function Validate() {  return true;}function InitIWCLObjects() {LBL2IWCL = NewIWCL(IWCLForm,"LBL2",false);LBLNOSPACESIWCL = NewIWCL(IWCLForm,"LBLNOSPACES",false);LBL1IWCL = NewIWCL(IWCLForm,"LBL1",false);IMGEMDUCSAIWCL = NewIWCL(IWCLForm,"IMGEMDUCSA",false);IWHRULE1IWCL = NewIWCL(IWCLForm,"IWHRULE1",false);LBLPACKTEXTIWCL = NewIWCL(IWCLForm,"LBLPACKTEXT",false);DLGDETAILS_lockerIWCL = NewIWCL(IWCLForm,"DLGDETAILS_locker",true);DLGDETAILS_lockerIWCL.SetAlign(alNone);DLGDETAILS_lockerIWCL.SetAnchors(new CreateAnchors(true, true, true, true));DLGDETAILSIWCL = NewIWCL(IWCLForm,"DLGDETAILS",false);if (DLGDETAILSIWCL) {DLGDETAILSIWCL.BorderWidthPixels = 1;DLGDETAILSIWCL.BorderWidth = 1;}IWDBLABEL15IWCL = NewIWCL(DLGDETAILSIWCL,"IWDBLABEL15",false);LBLRSPACE2IWCL = NewIWCL(DLGDETAILSIWCL,"LBLRSPACE2",false);IWDBLABEL14IWCL = NewIWCL(DLGDETAILSIWCL,"IWDBLABEL14",false);LBLSPACEIWCL = NewIWCL(DLGDETAILSIWCL,"LBLSPACE",false);LBLSTORAGEIWCL = NewIWCL(DLGDETAILSIWCL,"LBLSTORAGE",false);LBLRLOCATION1IWCL = NewIWCL(DLGDETAILSIWCL,"LBLRLOCATION1",false);LBLRLOCATION2IWCL = NewIWCL(DLGDETAILSIWCL,"LBLRLOCATION2",false);LBLRSPACE1IWCL = NewIWCL(DLGDETAILSIWCL,"LBLRSPACE1",false);LBLRFLOOR2IWCL = NewIWCL(DLGDETAILSIWCL,"LBLRFLOOR2",false);LBLRFLOOR1IWCL = NewIWCL(DLGDETAILSIWCL,"LBLRFLOOR1",false);IWDBLABEL11IWCL = NewIWCL(DLGDETAILSIWCL,"IWDBLABEL11",false);IWDBLABEL2IWCL = NewIWCL(DLGDETAILSIWCL,"IWDBLABEL2",false);LBLRSTORAGE2IWCL = NewIWCL(DLGDETAILSIWCL,"LBLRSTORAGE2",false);TIWGRADIENT2IWCL = NewIWCL(DLGDETAILSIWCL,"TIWGRADIENT2",false);if (TIWGRADIENT2IWCL != null) {  TIWGRADIENT2IWCL.SetAlign(alClient);
+ TIWGRADIENT2IWCL.SetAnchors(new CreateAnchors(true, true, true, true));}LBLRSTORAGE1IWCL = NewIWCL(DLGDETAILSIWCL,"LBLRSTORAGE1",false);IWDBLABEL3IWCL = NewIWCL(DLGDETAILSIWCL,"IWDBLABEL3",false);IWDBLABEL6IWCL = NewIWCL(DLGDETAILSIWCL,"IWDBLABEL6",false);IWDBLABEL7IWCL = NewIWCL(DLGDETAILSIWCL,"IWDBLABEL7",false);LBLAGEIWCL = NewIWCL(DLGDETAILSIWCL,"LBLAGE",false);IWDBLABEL5IWCL = NewIWCL(DLGDETAILSIWCL,"IWDBLABEL5",false);EDITIDTYPEIWCL = NewIWCL(DLGDETAILSIWCL,"EDITIDTYPE",false);if (EDITIDTYPEIWCL) EDITIDTYPEIWCL.HookEvent("change",EDITIDTYPE_onchange);EDITIDNUMBERIWCL = NewIWCL(DLGDETAILSIWCL,"EDITIDNUMBER",false);if (EDITIDNUMBERIWCL) EDITIDNUMBERIWCL.HookEvent("change",EDITIDNUMBER_onchange);if (EDITIDNUMBERIWCL) EDITIDNUMBERIWCL.HookEvent("keypress",EDITIDNUMBER_onkeypress);if (EDITIDNUMBERIWCL) EDITIDNUMBERIWCL.HookEvent("keypress",EDITIDNUMBER_onkeypress0);if (EDITIDNUMBERIWCL) EDITIDNUMBERIWCL.HookEvent("click",EDITIDNUMBER_onclick);if (EDITIDNUMBERIWCL) EDITIDNUMBERIWCL.HookEvent("select",EDITIDNUMBER_onselect);if (EDITIDNUMBERIWCL) EDITIDNUMBERIWCL.HookEvent("keyup",EDITIDNUMBER_onkeyup);EDITNAMEIWCL = NewIWCL(DLGDETAILSIWCL,"EDITNAME",false);if (EDITNAMEIWCL) EDITNAMEIWCL.HookEvent("change",EDITNAME_onchange);if (EDITNAMEIWCL) EDITNAMEIWCL.HookEvent("keypress",EDITNAME_onkeypress);if (EDITNAMEIWCL) EDITNAMEIWCL.HookEvent("keypress",EDITNAME_onkeypress0);if (EDITNAMEIWCL) EDITNAMEIWCL.HookEvent("click",EDITNAME_onclick);if (EDITNAMEIWCL) EDITNAMEIWCL.HookEvent("select",EDITNAME_onselect);if (EDITNAMEIWCL) EDITNAMEIWCL.HookEvent("keyup",EDITNAME_onkeyup);EDITADDRESS1IWCL = NewIWCL(DLGDETAILSIWCL,"EDITADDRESS1",false);if (EDITADDRESS1IWCL) EDITADDRESS1IWCL.HookEvent("change",EDITADDRESS1_onchange);if (EDITADDRESS1IWCL) EDITADDRESS1IWCL.HookEvent("keypress",EDITADDRESS1_onkeypress);if (EDITADDRESS1IWCL) EDITADDRESS1IWCL.HookEvent("keypress",EDITADDRESS1_onkeypress0);if (EDITADDRESS1IWCL) EDITADDRESS1IWCL.HookEvent("click",EDITADDRESS1_onclick);if (EDITADDRESS1IWCL) EDITADDRESS1IWCL.HookEvent("select",EDITADDRESS1_onselect);if (EDITADDRESS1IWCL) EDITADDRESS1IWCL.HookEvent("keyup",EDITADDRESS1_onkeyup);EDITADDRESS2IWCL = NewIWCL(DLGDETAILSIWCL,"EDITADDRESS2",false);if (EDITADDRESS2IWCL) EDITADDRESS2IWCL.HookEvent("change",EDITADDRESS2_onchange);if (EDITADDRESS2IWCL) EDITADDRESS2IWCL.HookEvent("keypress",EDITADDRESS2_onkeypress);if (EDITADDRESS2IWCL) EDITADDRESS2IWCL.HookEvent("keypress",EDITADDRESS2_onkeypress0);if (EDITADDRESS2IWCL) EDITADDRESS2IWCL.HookEvent("click",EDITADDRESS2_onclick);if (EDITADDRESS2IWCL) EDITADDRESS2IWCL.HookEvent("select",EDITADDRESS2_onselect);if (EDITADDRESS2IWCL) EDITADDRESS2IWCL.HookEvent("keyup",EDITADDRESS2_onkeyup);EDITEMAILIWCL = NewIWCL(DLGDETAILSIWCL,"EDITEMAIL",false);if (EDITEMAILIWCL) EDITEMAILIWCL.HookEvent("change",EDITEMAIL_onchange);if (EDITEMAILIWCL) EDITEMAILIWCL.HookEvent("keypress",EDITEMAIL_onkeypress);if (EDITEMAILIWCL) EDITEMAILIWCL.HookEvent("keypress",EDITEMAIL_onkeypress0);if (EDITEMAILIWCL) EDITEMAILIWCL.HookEvent("click",EDITEMAIL_onclick);if (EDITEMAILIWCL) EDITEMAILIWCL.HookEvent("select",EDITEMAIL_onselect);if (EDITEMAILIWCL) EDITEMAILIWCL.HookEvent("keyup",EDITEMAIL_onkeyup);EDITTELEPHONE1IWCL = NewIWCL(DLGDETAILSIWCL,"EDITTELEPHONE1",false);if (EDITTELEPHONE1IWCL) EDITTELEPHONE1IWCL.HookEvent("change",EDITTELEPHONE1_onchange);if (EDITTELEPHONE1IWCL) EDITTELEPHONE1IWCL.HookEvent("keypress",EDITTELEPHONE1_onkeypress);if (EDITTELEPHONE1IWCL) EDITTELEPHONE1IWCL.HookEvent("keypress",EDITTELEPHONE1_onkeypress0);if (EDITTELEPHONE1IWCL) EDITTELEPHONE1IWCL.HookEvent("click",EDITTELEPHONE1_onclick);if (EDITTELEPHONE1IWCL) EDITTELEPHONE1IWCL.HookEvent("select",EDITTELEPHONE1_onselect);if (EDITTELEPHONE1IWCL) EDITTELEPHONE1IWCL.HookEvent("keyup",EDITTELEPHONE1_onkeyup);EDITTELEPHONE2IWCL = NewIWCL(DLGDETAILSIWCL,"EDITTELEPHONE2",false);if (EDITTELEPHONE2IWCL) EDITTELEPHONE2IWCL.HookEvent("change",EDITTELEPHONE2_onchange);if (EDITTELEPHONE2IWCL) EDITTELEPHONE2IWCL.HookEvent("keypress",EDITTELEPHONE2_onkeypress);if (EDITTELEPHONE2IWCL) EDITTELEPHONE2IWCL.HookEvent("keypress",EDITTELEPHONE2_onkeypress0);if (EDITTELEPHONE2IWCL) EDITTELEPHONE2IWCL.HookEvent("click",EDITTELEPHONE2_onclick);if (EDITTELEPHONE2IWCL) EDITTELEPHONE2IWCL.HookEvent("select",EDITTELEPHONE2_onselect);if (EDITTELEPHONE2IWCL) EDITTELEPHONE2IWCL.HookEvent("keyup",EDITTELEPHONE2_onkeyup);EDITAGEIWCL = NewIWCL(DLGDETAILSIWCL,"EDITAGE",false);if (EDITAGEIWCL) EDITAGEIWCL.HookEvent("change",EDITAGE_onchange);if (EDITAGEIWCL) EDITAGEIWCL.HookEvent("keypress",EDITAGE_onkeypress);if (EDITAGEIWCL) EDITAGEIWCL.HookEvent("keypress",EDITAGE_onkeypress0);if (EDITAGEIWCL) EDITAGEIWCL.HookEvent("click",EDITAGE_onclick);if (EDITAGEIWCL) EDITAGEIWCL.HookEvent("select",EDITAGE_onselect);if (EDITAGEIWCL) EDITAGEIWCL.HookEvent("keyup",EDITAGE_onkeyup);CHKAGREEIWCL = NewIWCL(DLGDETAILSIWCL,"CHKAGREE",false);if (CHKAGREEIWCL) CHKAGREEIWCL.HookEvent("change",CHKAGREE_onchange);if (CHKAGREEIWCL) CHKAGREEIWCL.HookEvent("keypress",CHKAGREE_onkeypress);if (CHKAGREEIWCL) CHKAGREEIWCL.HookEvent("click",CHKAGREE_onclick);if (CHKAGREEIWCL) CHKAGREEIWCL.HookEvent("select",CHKAGREE_onselect);BTNCONFIRMIWCL = NewIWCL(DLGDETAILSIWCL,"BTNCONFIRM",false);if (BTNCONFIRMIWCL) BTNCONFIRMIWCL.HookEvent("click",BTNCONFIRM_onclick);BTNCANCELIWCL = NewIWCL(DLGDETAILSIWCL,"BTNCANCEL",false);if (BTNCANCELIWCL) BTNCANCELIWCL.HookEvent("click",BTNCANCEL_onclick);LNKAGREEIWCL = NewIWCL(DLGDETAILSIWCL,"LNKAGREE",false);if (LNKAGREEIWCL) LNKAGREEIWCL.HookEvent("click",LNKAGREE_onclick);if(EDITIDTYPEIWCL) { EDITIDTYPEIWCL.AutoHide = false }DLGINGRESO_lockerIWCL = NewIWCL(IWCLForm,"DLGINGRESO_locker",true);DLGINGRESO_lockerIWCL.SetAlign(alNone);DLGINGRESO_lockerIWCL.SetAnchors(new CreateAnchors(true, true, true, true));DLGINGRESOIWCL = NewIWCL(IWCLForm,"DLGINGRESO",false);if (DLGINGRESOIWCL) {DLGINGRESOIWCL.BorderWidthPixels = 1;DLGINGRESOIWCL.BorderWidth = 1;}IWDBLABEL4IWCL = NewIWCL(DLGINGRESOIWCL,"IWDBLABEL4",false);LBLEUROIWCL = NewIWCL(DLGINGRESOIWCL,"LBLEURO",false);LBLFINGRESIWCL = NewIWCL(DLGINGRESOIWCL,"LBLFINGRES",false);TIWGRADIENT3IWCL = NewIWCL(DLGINGRESOIWCL,"TIWGRADIENT3",false);if (TIWGRADIENT3IWCL != null) {  TIWGRADIENT3IWCL.SetAlign(alClient);
+ TIWGRADIENT3IWCL.SetAnchors(new CreateAnchors(true, true, true, true));}IWDBLABEL23IWCL = NewIWCL(DLGINGRESOIWCL,"IWDBLABEL23",false);BTNENDIWCL = NewIWCL(DLGINGRESOIWCL,"BTNEND",false);if (BTNENDIWCL) BTNENDIWCL.HookEvent("click",BTNEND_onclick);DLGTERMS_lockerIWCL = NewIWCL(IWCLForm,"DLGTERMS_locker",true);DLGTERMS_lockerIWCL.SetAlign(alNone);DLGTERMS_lockerIWCL.SetAnchors(new CreateAnchors(true, true, true, true));DLGTERMSIWCL = NewIWCL(IWCLForm,"DLGTERMS",false);if (DLGTERMSIWCL) {DLGTERMSIWCL.BorderWidthPixels = 1;DLGTERMSIWCL.BorderWidth = 1;}TIWGRADIENT4IWCL = NewIWCL(DLGTERMSIWCL,"TIWGRADIENT4",false);if (TIWGRADIENT4IWCL != null) {  TIWGRADIENT4IWCL.SetAlign(alClient);
+ TIWGRADIENT4IWCL.SetAnchors(new CreateAnchors(true, true, true, true));}BTNCLOSETERMSIWCL = NewIWCL(DLGTERMSIWCL,"BTNCLOSETERMS",false);if (BTNCLOSETERMSIWCL) BTNCLOSETERMSIWCL.HookEvent("click",BTNCLOSETERMS_onclick);IWDBMEMO1IWCL = NewIWCL(DLGTERMSIWCL,"IWDBMEMO1",false);LBL4IWCL = NewIWCL(IWCLForm,"LBL4",false);LBL3IWCL = NewIWCL(IWCLForm,"LBL3",false);LBLHEADERIWCL = NewIWCL(IWCLForm,"LBLHEADER",false);LBLCOPYRIGHTIWCL = NewIWCL(IWCLForm,"LBLCOPYRIGHT",false);LBLOFFLINEIWCL = NewIWCL(IWCLForm,"LBLOFFLINE",false);TIWGRADIENT1IWCL = NewIWCL(IWCLForm,"TIWGRADIENT1",false);if (TIWGRADIENT1IWCL != null) {  TIWGRADIENT1IWCL.SetAlign(alClient);
+ TIWGRADIENT1IWCL.SetAnchors(new CreateAnchors(true, true, true, true));}LOIWCL = NewIWCL(IWCLForm,"LO",false);BTNPACKYESIWCL = NewIWCL(IWCLForm,"BTNPACKYES",false);if (BTNPACKYESIWCL) BTNPACKYESIWCL.HookEvent("change",BTNPACKYES_onchange);if (BTNPACKYESIWCL) BTNPACKYESIWCL.HookEvent("keypress",BTNPACKYES_onkeypress);if (BTNPACKYESIWCL) BTNPACKYESIWCL.HookEvent("click",BTNPACKYES_onclick);if (BTNPACKYESIWCL) BTNPACKYESIWCL.HookEvent("click",BTNPACKYES_onclick0);if (BTNPACKYESIWCL) BTNPACKYESIWCL.HookEvent("select",BTNPACKYES_onselect);BTNPACKNOIWCL = NewIWCL(IWCLForm,"BTNPACKNO",false);if (BTNPACKNOIWCL) BTNPACKNOIWCL.HookEvent("change",BTNPACKNO_onchange);if (BTNPACKNOIWCL) BTNPACKNOIWCL.HookEvent("keypress",BTNPACKNO_onkeypress);if (BTNPACKNOIWCL) BTNPACKNOIWCL.HookEvent("click",BTNPACKNO_onclick);if (BTNPACKNOIWCL) BTNPACKNOIWCL.HookEvent("click",BTNPACKNO_onclick0);if (BTNPACKNOIWCL) BTNPACKNOIWCL.HookEvent("select",BTNPACKNO_onselect);CMBLOCATIONIWCL = NewIWCL(IWCLForm,"CMBLOCATION",false);if (CMBLOCATIONIWCL) CMBLOCATIONIWCL.HookEvent("change",CMBLOCATION_onchange);if (CMBLOCATIONIWCL) CMBLOCATIONIWCL.HookEvent("change",CMBLOCATION_onchange0);if (CMBLOCATIONIWCL) CMBLOCATIONIWCL.HookEvent("keypress",CMBLOCATION_onkeypress);if (CMBLOCATIONIWCL) CMBLOCATIONIWCL.HookEvent("click",CMBLOCATION_onclick);if (CMBLOCATIONIWCL) CMBLOCATIONIWCL.HookEvent("select",CMBLOCATION_onselect);CMBFLOORIWCL = NewIWCL(IWCLForm,"CMBFLOOR",false);if (CMBFLOORIWCL) CMBFLOORIWCL.HookEvent("change",CMBFLOOR_onchange);if (CMBFLOORIWCL) CMBFLOORIWCL.HookEvent("change",CMBFLOOR_onchange0);if (CMBFLOORIWCL) CMBFLOORIWCL.HookEvent("keypress",CMBFLOOR_onkeypress);if (CMBFLOORIWCL) CMBFLOORIWCL.HookEvent("click",CMBFLOOR_onclick);if (CMBFLOORIWCL) CMBFLOORIWCL.HookEvent("select",CMBFLOOR_onselect);BTNPLANIWCL = NewIWCL(IWCLForm,"BTNPLAN",false);if (BTNPLANIWCL) BTNPLANIWCL.HookEvent("click",BTNPLAN_onclick);if (BTNPLANIWCL) BTNPLANIWCL.HookEvent("click",BTNPLAN_onclick0);GRDSPACESIWCL = NewIWCL(IWCLForm,"GRDSPACES",false);if (GRDSPACESIWCL) GRDSPACESIWCL.HookEvent("change",GRDSPACES_onchange);if (GRDSPACESIWCL) GRDSPACESIWCL.HookEvent("keypress",GRDSPACES_onkeypress);if (GRDSPACESIWCL) GRDSPACESIWCL.HookEvent("click",GRDSPACES_onclick);if (GRDSPACESIWCL) GRDSPACESIWCL.HookEvent("select",GRDSPACES_onselect);BTNCLOSEIWCL = NewIWCL(IWCLForm,"BTNCLOSE",false);if (BTNCLOSEIWCL) BTNCLOSEIWCL.HookEvent("click",BTNCLOSE_onclick);BTNSELECTIWCL = NewIWCL(IWCLForm,"BTNSELECT",false);if (BTNSELECTIWCL) BTNSELECTIWCL.HookEvent("click",BTNSELECT_onclick);BTNCANCELRESERVAIWCL = NewIWCL(IWCLForm,"BTNCANCELRESERVA",false);if (BTNCANCELRESERVAIWCL) BTNCANCELRESERVAIWCL.HookEvent("click",BTNCANCELRESERVA_onclick);GRDSTORAGEIWCL = NewIWCL(IWCLForm,"GRDSTORAGE",false);if (GRDSTORAGEIWCL) GRDSTORAGEIWCL.HookEvent("change",GRDSTORAGE_onchange);if (GRDSTORAGEIWCL) GRDSTORAGEIWCL.HookEvent("keypress",GRDSTORAGE_onkeypress);if (GRDSTORAGEIWCL) GRDSTORAGEIWCL.HookEvent("click",GRDSTORAGE_onclick);if (GRDSTORAGEIWCL) GRDSTORAGEIWCL.HookEvent("select",GRDSTORAGE_onselect);BTNSELECTSPACEIWCL = NewIWCL(IWCLForm,"BTNSELECTSPACE",false);if (BTNSELECTSPACEIWCL) BTNSELECTSPACEIWCL.HookEvent("click",BTNSELECTSPACE_onclick);BTNSELECTCOMBOIWCL = NewIWCL(IWCLForm,"BTNSELECTCOMBO",false);if (BTNSELECTCOMBOIWCL) BTNSELECTCOMBOIWCL.HookEvent("click",BTNSELECTCOMBO_onclick);BTNSELECTSTORAGEIWCL = NewIWCL(IWCLForm,"BTNSELECTSTORAGE",false);if (BTNSELECTSTORAGEIWCL) BTNSELECTSTORAGEIWCL.HookEvent("click",BTNSELECTSTORAGE_onclick);BTNCANCELRESERVACOMBOIWCL = NewIWCL(IWCLForm,"BTNCANCELRESERVACOMBO",false);if (BTNCANCELRESERVACOMBOIWCL) BTNCANCELRESERVACOMBOIWCL.HookEvent("click",BTNCANCELRESERVACOMBO_onclick);if(CMBLOCATIONIWCL) { CMBLOCATIONIWCL.AutoHide = false }if(CMBFLOORIWCL) { CMBFLOORIWCL.AutoHide = false }}
+function Initialize() {StaticInit();GActivateLock = true;InitRects(493, 683);InitIWCLObjects();IWTop().dlgInitialize();IWTop().dlgInitialize();IWTop().dlgInitialize();FindElem('GRDSPACES').value="0000000|||||||||";
+
+GRDSPACESsbwidth();G0ScrollInit();
+FindElem('GRDSTORAGE').value="0000000000||||||||||||";
+
+GRDSTORAGEsbwidth();G0ScrollInit();
+Body_OnResize();if (document.body.leftMargin < 0 && document.body.topMargin < 0) {  document.body.leftMargin = 0;  document.body.topMargin = 0;}ReleaseLock();GActiveControl="CMBLOCATION";if (GActiveControl) { var xElem; xElem = FindFocus(GActiveControl); if (xElem != null) { xElem.focus();}}}</script><meta http-equiv="MSThemeCompatible" content="yes"><meta name="GENERATOR" content="IntraWeb v9.0.42 Serial 201225181"><meta http-equiv="imagetoolbar" content="no"><script type="text/javascript" src="/js/IWCommon.js_9.0.42"></script><script type="text/javascript" src="/js/IWCL.js_9.0.42"></script><script type="text/javascript" src="/js/IWAjax.js_9.0.42"></script><script type="text/javascript" src="/js/ArcIWDlgPopupRegion.js_9.0.42"></script><script type="text/javascript" src="/js/TMSAE.js_9.0.42"></script><script type="text/javascript" src="/js/TMSGRID.js_9.0.42"></script><script type="text/javascript" src="/js/IWGecko.js_9.0.42"></script><meta name="darkreader" content="6533c14cbaa8131152a870417580ef97"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #634d13 !important;
+    border-color: #8c7413 !important;
+    color: #b8b5b1 !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #284b56 !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: #1f3f49 !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: #2a2c2c !important;
+}
+.tou-uknfeu {
+    background-color: #46351a !important;
+}
+.tou-6i3zyv {
+    background-color: #2f5a69 !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}</style></head><body onresize="return Body_OnResize();" topmargin="0" leftmargin="0" onload="Initialize()" onunload="ReleaseIWCL()" onblur="GSubmitting = false;"><script language="Javascript">  IWTop().UMStr = '';idx = IWTop().dlgRegister('DLGDETAILS','');IWTop().dlgRegisterControls('DLGDETAILS',new Array("EDITIDTYPE","BTNCONFIRM","CHKAGREE_CHECKBOX","EDITAGE","EDITNAME","EDITADDRESS1","EDITADDRESS2","EDITIDNUMBER","EDITEMAIL","EDITTELEPHONE1","EDITTELEPHONE2","BTNCANCEL"));IWTop().dlgBrowser='Other';IWTop().dlgSupportTabbing[idx]=true;IWTop().dlgTrapEnter[idx]=false;IWTop().dlgTrapEscape[idx]=false;</script>
+  <table name="DLGDETAILS_locker" id="DLGDETAILS_locker" border="0" cellpadding="0" cellspacing="0" style="left: 0px; top: 0px; width: 785px; height: 698px; border-collapse: collapse; z-index: 100000; visibility: hidden; position: absolute; background-image: url(&quot;/gfx/AlphaImage.png&quot;); clip: rect(0px, 785px, 698px, 0px);">
+  <tbody><tr><td></td></tr>
+<script language="JavaScript1.2"> 
+  G_DLGDETAILS_Submitted = false;
+</script>
+</tbody></table><script language="Javascript">  IWTop().UMStr = '';idx = IWTop().dlgRegister('DLGINGRESO','');IWTop().dlgRegisterControls('DLGINGRESO',new Array("BTNEND","BTNEND"));IWTop().dlgBrowser='Other';IWTop().dlgSupportTabbing[idx]=true;IWTop().dlgTrapEnter[idx]=false;IWTop().dlgTrapEscape[idx]=false;</script>
+  <table name="DLGINGRESO_locker" id="DLGINGRESO_locker" border="0" cellpadding="0" cellspacing="0" style="left: 0px; top: 0px; width: 785px; height: 698px; border-collapse: collapse; z-index: 100000; visibility: hidden; position: absolute; background-image: url(&quot;/gfx/AlphaImage.png&quot;); clip: rect(0px, 785px, 698px, 0px);">
+  <tbody><tr><td></td></tr>
+<script language="JavaScript1.2"> 
+  G_DLGINGRESO_Submitted = false;
+</script>
+</tbody></table><script language="Javascript">  IWTop().UMStr = '';idx = IWTop().dlgRegister('DLGTERMS','');IWTop().dlgRegisterControls('DLGTERMS',new Array("BTNCLOSETERMS","IWDBMEMO1"));IWTop().dlgBrowser='Other';IWTop().dlgSupportTabbing[idx]=true;IWTop().dlgTrapEnter[idx]=false;IWTop().dlgTrapEscape[idx]=false;</script>
+  <table name="DLGTERMS_locker" id="DLGTERMS_locker" border="0" cellpadding="0" cellspacing="0" style="left: 0px; top: 0px; width: 785px; height: 698px; border-collapse: collapse; z-index: 100000; visibility: hidden; position: absolute; background-image: url(&quot;/gfx/AlphaImage.png&quot;); clip: rect(0px, 785px, 698px, 0px);">
+  <tbody><tr><td></td></tr>
+<script language="JavaScript1.2"> 
+  G_DLGTERMS_Submitted = false;
+</script>
+</tbody></table>
+  <script type="text/javascript">createIWLocker("/gfx/loading.gif");ActivateLock();</script><div id="IWLocker" style="background-image: url(&quot;/gfx/loading.gif&quot;); position: absolute; background-position: center center; background-repeat: no-repeat; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 10000; background-color: transparent; visibility: hidden; --darkreader-inline-bgcolor: transparent;" data-darkreader-inline-bgcolor=""></div><script language="Javascript">var PreScript=false;PostScript=false;</script>
+  <iframe src="/Cache/user/1uohrpk0xspzlp1al8ibg142cs5h/HTMA924.tmp" id="SubmitFrame" style="position:absolute;left:-1000px;top:-1000px"></iframe>
+  <form method="POST" name="HiddenSubmitForm" action="/EXEC/1/1uohrpk0xspzlp1al8ibg142cs5h" style="position:absolute;left:-100000px;top:-100000px;visibility:hidden;display:none;"></form>
+<span id="LBL2_UPDATE">
+  <span style="text-align:center;" class="LBL2CSS" id="LBL2">Seleccioni la plaça i faci clic en "reservar".<br></span></span><span id="LBLNOSPACES_UPDATE">
+  <span id="LBLNOSPACES"></span></span><span id="LBL1_UPDATE">
+  <span style="text-align:center;" class="LBL1CSS" id="LBL1">Trii l'aparcament i la planta que l'interessa.</span></span><form onsubmit="return FormDefaultSubmit();"><span id="IMGEMDUCSA_UPDATE">
+  <img src="/Cache/user/1uohrpk0xspzlp1al8ibg142cs5h/JPGA8D5.tmp" name="IMGEMDUCSA" border="0" class="IMGEMDUCSACSS" id="IMGEMDUCSA"></span></form><span id="IWHRULE1_UPDATE">
+  <hr width="801" height="1" class="IWHRULE1CSS" id="IWHRULE1"></span><span id="LBLPACKTEXT_UPDATE">
+  <span id="LBLPACKTEXT"></span></span><span id="DLGDETAILS_UPDATE">
+  <span id="DLGDETAILS"></span></span><span id="DLGINGRESO_UPDATE">
+  <span id="DLGINGRESO"></span></span><span id="DLGTERMS_UPDATE">
+  <span id="DLGTERMS"></span></span><span id="LBL4_UPDATE">
+  <span id="LBL4"></span></span><span id="LBL3_UPDATE">
+  <span id="LBL3"></span></span><span id="LBLHEADER_UPDATE">
+  <span style="text-align:center;" class="LBLHEADERCSS" id="LBLHEADER">Promoció Parquings</span></span><span id="LBLCOPYRIGHT_UPDATE">
+  <span style="text-align:right;" class="LBLCOPYRIGHTCSS" id="LBLCOPYRIGHT">PARKING SPACE © 2009-2013 Software Experts S.L.</span></span><span id="LBLOFFLINE_UPDATE">
+  <span id="LBLOFFLINE"></span></span><span id="TIWGRADIENT1_UPDATE">
+  <div style="height: 698px; overflow: hidden; background-color: rgb(255, 255, 255); left: 0px; top: 0px; width: 785px; clip: rect(0px, 785px, 698px, 0px); --darkreader-inline-bgcolor: #252728;" class="TIWGRADIENT1CSS" id="TIWGRADIENT1" data-darkreader-inline-bgcolor=""><table style="height:100%;width:100%;font-style:normal;font-weight:normal;font-size:13px;font-family:'Verdana';text-decoration: none;" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle"></td></tr></tbody></table></div></span><span id="LO_UPDATE">
+  <span id="LO"></span></span><form onsubmit="return FormDefaultSubmit();"><span id="BTNPACKYES_UPDATE" tabindex="1">
+  <span id="BTNPACKYES"></span></span><span id="BTNPACKNO_UPDATE" tabindex="2">
+  <span id="BTNPACKNO"></span></span><span id="CMBLOCATION_UPDATE">
+  <select name="CMBLOCATION" size="1" width="145" class="CMBLOCATIONCSS" id="CMBLOCATION" tabindex="3">
+  <option selected="" value="-1">-</option>
+  <option value="0">Almogàvers</option>
+  <option value="1">Can Moritz</option>
+  <option value="2">Fontsanta</option>
+  <option value="3">Línia Elèctrica</option>
+  <option value="4">Mercat Sant Ildefons</option>
+  <option value="5">Plaça del Sol</option>
+  <option value="6">Prat de la Riba</option>
+  <option value="7">Salvador Allende</option>
+  <option value="8">Siemens</option>
+  <option value="9">Verdaguer</option></select></span><span id="CMBFLOOR_UPDATE">
+  <select name="CMBFLOOR" size="1" disabled="" width="111" class="CMBFLOORCSS" id="CMBFLOOR" tabindex="4">
+  <option selected="" value="-1">-</option></select></span><span id="BTNPLAN_UPDATE">
+  <input value="Veure Plànol" name="BTNPLAN" type="button" disabled="" class="BTNPLANCSS" id="BTNPLAN" tabindex="5"></span><span id="GRDSPACES_UPDATE">
+  <span id="GRDSPACES"></span></span><span id="BTNCLOSE_UPDATE" tabindex="7">
+  <span id="BTNCLOSE"></span></span><span id="BTNSELECT_UPDATE" tabindex="8">
+  <span id="BTNSELECT"></span></span><span id="BTNCANCELRESERVA_UPDATE" tabindex="25">
+  <span id="BTNCANCELRESERVA"></span></span><span id="GRDSTORAGE_UPDATE">
+  <span id="GRDSTORAGE"></span></span><span id="BTNSELECTSPACE_UPDATE" tabindex="27">
+  <span id="BTNSELECTSPACE"></span></span><span id="BTNSELECTCOMBO_UPDATE" tabindex="28">
+  <span id="BTNSELECTCOMBO"></span></span><span id="BTNSELECTSTORAGE_UPDATE" tabindex="29">
+  <span id="BTNSELECTSTORAGE"></span></span><span id="BTNCANCELRESERVACOMBO_UPDATE" tabindex="30">
+  <span id="BTNCANCELRESERVACOMBO"></span></span></form></body></html>
