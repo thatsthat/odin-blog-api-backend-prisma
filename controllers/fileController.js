@@ -3,9 +3,26 @@ const asyncHandler = require("express-async-handler");
 const { body, validationResult } = require("express-validator");
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
+const { createClient } = require("@supabase/supabase-js");
 
 // Handle Post create on POST.
 exports.create = asyncHandler(async (req, res, next) => {
+  console.log(process.env.SUPABASE_URL);
+  const supabase = createClient(
+    process.env.SUPABASE_URL,
+    process.env.SUPABASE_KEY
+  );
+  const fileData = await supabase.storage
+    .from("odin")
+    .upload(req.file.originalname, req.file.buffer, {
+      cacheControl: "3600",
+      upsert: false,
+    });
+
+  const urlData = supabase.storage
+    .from("odin")
+    .getPublicUrl(fileData.data.path);
+
   var parentData = {};
   if (req.body.parentId) parentData = { connect: { id: +req.body.parentId } };
   await prisma.file.create({
@@ -13,8 +30,12 @@ exports.create = asyncHandler(async (req, res, next) => {
       name: req.file.originalname,
       owner: { connect: { id: req.user.id } },
       parent: parentData,
+      url: urlData.data.publicUrl,
     },
   });
+
+  console.log(data);
+
   return res.json({ message: "File saved" });
 });
 

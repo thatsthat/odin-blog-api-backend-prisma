@@ -24,6 +24,7 @@ model File {
   id            Int      @id @default(autoincrement())
   created       DateTime @default(now())
   name          String   @db.VarChar(255)
+  url           String?
   owner         User     @relation("ownedFiles", fields: [ownerId], references: [id])
   ownerId       Int
   isFolder      Boolean  @default(false)
